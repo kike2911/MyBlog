@@ -1,0 +1,72 @@
+.main-photo{
+    width: 21rem;
+        height: 21rem;
+        float: left;
+        //transform: translateX(-3rem) skewX(12deg);
+        position: absolute;
+        top: 79%;
+        left: 3.5rem;
+        overflow: hidden;
+        border-radius: 50%;
+        z-index: 100;
+}
+
+
+.information{
+    position: absolute;
+    float: left;
+    top: 63%;
+    left: 28rem;
+    overflow: hidden;
+    z-index: 100;
+    ul{
+
+        .info{
+            color: white;
+            font-size: 5rem;
+            flex: 1;
+            align-items: center;
+
+        }
+    }
+}
+
+
+.info--4{
+
+    opacity: 0;
+
+    animation: item-4 20s ease-out;    
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+.info--3{
+
+    opacity: 0;
+
+    animation: item-3 20s ease-out;    
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-delay: 5s;
+}
+
+.info--2{
+
+    opacity: 0;
+
+    animation: item-2 20s ease-out;    
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-delay: 10s;
+}
+
+.info--1{
+
+    opacity: 0;
+
+    animation: item-1 20s ease-out;    
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-delay: 15s;
+}

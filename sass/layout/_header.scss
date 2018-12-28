@@ -1,0 +1,59 @@
+.header {
+    height: 85vh;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-primary-light, 0.8),
+        rgba($color-primary-dark, 0.8)),
+    url(../../img/hero.jpg);
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    
+    
+
+    @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+        //clip-path: polygon(100% 0, 100% 100%, 84% 95%, 100% 0, 81% 94%, 67% 89%, 100% 0, 65% 88%, 43% 81%, 100% 0, 40% 81%, 19% 81%, 0 81%, 100% 0, 0 78%, 0 52%, 100% 0, 0 50%, 0 35%, 100% 0, 0 33%, 0 19%, 100% 0, 0 17%, 0 7%, 100% 0, 0 5%, 0 0);
+        
+        clip-path: polygon(50% 0%, 100% 0, 100% 89%, 68% 85%, 0 78%, 0 0);
+
+        height: 95vh;
+z-index: 1000;
+        
+    }
+
+    @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+            only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+            only screen and (min-width: 125em) {
+        background-image: linear-gradient(
+            to right bottom,
+            rgba($color-primary-light, 0.8),
+            rgba($color-primary-dark, 0.8)),
+        url(../../img/hero.jpg);
+    }
+
+    @include respond(phone) {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+    }
+
+    &__logo-box {
+        position: absolute;
+        top: 4rem;
+        left: 4rem;
+    }
+
+    &__logo {
+        height: 3.5rem;
+    }
+    
+    &__text-box {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+}
+
+
+
