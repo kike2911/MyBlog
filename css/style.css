@@ -28,6 +28,32 @@
     opacity: 1;
     transform: translate(0); } }
 
+@keyframes item-01 {
+  0% {
+    opacity: 0;
+    transform: translateY(35rem); }
+  10% {
+    transform: translateY(24.5rem); }
+  20% {
+    opacity: 1;
+    transform: translateY(25.5rem); }
+  50% {
+    opacity: 0;
+    transform: translateY(25.5rem); } }
+
+@keyframes item-0 {
+  0% {
+    opacity: 0;
+    transform: translateY(45rem); }
+  10% {
+    transform: translateY(33.5rem); }
+  20% {
+    opacity: 1;
+    transform: translateY(34.5rem); }
+  50% {
+    opacity: 0;
+    transform: translateY(34.5rem); } }
+
 @keyframes item-1 {
   0% {
     opacity: 0;
@@ -530,7 +556,7 @@ body {
 .information {
   position: absolute;
   float: left;
-  top: 63%;
+  top: 50%;
   left: 28rem;
   overflow: hidden;
   z-index: 100; }
@@ -548,24 +574,38 @@ body {
 
 .info--3 {
   opacity: 0;
-  animation: item-3 20s ease-out;
+  animation: item-3 30s ease-out;
   animation-iteration-count: infinite;
   animation-direction: normal;
   animation-delay: 5s; }
 
 .info--2 {
   opacity: 0;
-  animation: item-2 20s ease-out;
+  animation: item-2 30s ease-out;
   animation-iteration-count: infinite;
   animation-direction: normal;
   animation-delay: 10s; }
 
 .info--1 {
   opacity: 0;
-  animation: item-1 20s ease-out;
+  animation: item-1 30s ease-out;
   animation-iteration-count: infinite;
   animation-direction: normal;
   animation-delay: 15s; }
+
+.info--0 {
+  opacity: 0;
+  animation: item-0 30s ease-out;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-delay: 20s; }
+
+.info--01 {
+  opacity: 0;
+  animation: item-01 30s ease-out;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-delay: 25s; }
 
 .header {
   height: 85vh;
