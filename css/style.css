@@ -128,7 +128,7 @@ body {
       padding: 0; } }
 
 ::selection {
-  background-color: #ffffff2c;
+  background-color: #fa0404d2;
   color: #fff; }
 
 body {
@@ -147,7 +147,7 @@ body {
     display: block;
     font-size: 10rem;
     font-weight: 400;
-    letter-spacing: 3.5rem;
+    letter-spacing: 2.5rem;
     animation-name: moveInLeft;
     animation-duration: 1s;
     animation-timing-function: ease-out;
@@ -196,6 +196,36 @@ body {
   font-size: 1.6rem; }
   .paragraph:not(:last-child) {
     margin-bottom: 3rem; }
+
+.heading-primary-tyb {
+  color: #fff;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  margin-bottom: 6rem; }
+  .heading-primary-tyb--main {
+    display: block;
+    font-size: 10rem;
+    letter-spacing: 1rem;
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    /*
+        animation-delay: 3s;
+        animation-iteration-count: 3;
+        */ }
+    @media only screen and (max-width: 37.5em) {
+      .heading-primary-tyb--main {
+        letter-spacing: 1rem;
+        font-family: 5rem; } }
+  .heading-primary-tyb--sub {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1.75rem;
+    animation: moveInRight 1s ease-out; }
+    @media only screen and (max-width: 37.5em) {
+      .heading-primary-tyb--sub {
+        letter-spacing: .5rem; } }
 
 .bg-video {
   position: absolute;
@@ -518,14 +548,15 @@ body {
     filter: blur(3px) brightness(80%); }
 
 .general-header {
-  position: relative; }
+  position: relative;
+  height: 100vh; }
 
 .main-photo {
   width: 21rem;
   height: 21rem;
   float: left;
   position: absolute;
-  top: 83%;
+  top: 80vh;
   left: 3.5rem;
   overflow: hidden;
   border-radius: 50%;
@@ -534,7 +565,7 @@ body {
 .information {
   position: absolute;
   float: left;
-  top: 66%;
+  top: 64vh;
   left: 28rem;
   overflow: hidden;
   z-index: 100; }
@@ -571,21 +602,47 @@ body {
   animation-direction: normal;
   animation-delay: 15s; }
 
-.about-me {
+.tyb {
   display: flex;
-  margin-left: 10rem;
-  margin-right: 10rem;
-  background-color: white;
-  border-radius: 5px;
-  box-shadow: rgba(255, 255, 255, 0.199);
-  flex-wrap: wrap;
-  flex-flow: wrap;
+  align-items: center;
   justify-content: center;
+  height: 85vh;
+  background-image: linear-gradient(to right bottom, rgba(5, 255, 88, 0.3), rgba(0, 133, 44, 0.3)), url(../../img/tyb.jpg);
+  background-size: cover;
+  background-position: top;
+  position: relative; }
+  @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+    .tyb {
+      clip-path: polygon(0 18%, 100% 0, 100% 100%, 0 87%);
+      height: 95vh;
+      z-index: 1000; } }
+  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
+    .tyb {
+      background-image: linear-gradient(to right bottom, rgba(5, 255, 88, 0.3), rgba(0, 133, 44, 0.3)), url(../../img/tyb.jpg);
+      background-position-y: 25%; } }
+  @media only screen and (max-width: 37.5em) {
+    .tyb {
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%); } }
+  .tyb__logo {
+    height: 3.5rem; }
+  .tyb__text-box {
+    max-width: 50%;
+    text-align: center; }
+
+.about-me-general {
+  weight: 100vh;
+  height: 100vh;
+  display: flex;
+  align-items: center; }
+
+.about-me {
+  background-color: white;
+  box-shadow: rgba(255, 255, 255, 0.199);
   padding: 5rem;
-  flex-direction: column;
-  margin-top: 20rem;
   margin-bottom: 5rem;
-  transition: transform 0.6s ease-in-out; }
+  transition: transform 0.6s ease-in-out;
+  flex: 1; }
   .about-me .heading-secondary {
     align-self: center;
     padding: 2rem; }
@@ -629,15 +686,25 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: transparent;
-  z-index: 10000; }
+  z-index: 10000;
+  transition: all 0.5s;
+  background-color: transparent; }
   .flex-nav ul {
-    background-color: transparent;
     border-radius: 3px;
     display: flex;
     justify-content: space-around;
     flex: 1; }
-    .flex-nav ul .item {
+    .flex-nav ul a {
+      color: #fa0404d2;
+      font-weight: 400;
+      align-self: center;
+      display: inline-block;
+      font-weight: 300;
+      letter-spacing: 2px;
+      text-decoration: none;
+      color: white;
+      font-family: sans-serif;
+      font-size: 14px;
       list-style: none;
       flex: 1;
       align-self: center;
@@ -650,19 +717,48 @@ body {
       text-transform: uppercase;
       align-self: center;
       align-items: stretch; }
-      .flex-nav ul .item:hover, .flex-nav ul .item:focus, .flex-nav ul .item:active {
+      .flex-nav ul a:hover {
         background-color: white;
-        transform: scale(1.2);
-        transition: all .2s; }
-        .flex-nav ul .item:hover a, .flex-nav ul .item:focus a, .flex-nav ul .item:active a {
-          color: #fa0404d2;
-          font-weight: 400; }
-      .flex-nav ul .item a {
-        align-self: center;
-        display: inline-block;
-        font-weight: 300;
-        letter-spacing: 2px;
-        text-decoration: none;
-        color: white;
-        font-family: sans-serif;
-        font-size: 14px; }
+        transition: all .2s;
+        color: #fa0404d2; }
+
+.flex-nav-alt {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100000;
+  transition: all 0.5s;
+  background-color: black; }
+  .flex-nav-alt ul {
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-around;
+    flex: 1; }
+    .flex-nav-alt ul a {
+      color: #fa0404d2;
+      font-weight: 400;
+      align-self: center;
+      display: inline-block;
+      font-weight: 300;
+      letter-spacing: 2px;
+      text-decoration: none;
+      color: white;
+      font-family: sans-serif;
+      font-size: 14px;
+      list-style: none;
+      flex: 1;
+      align-self: center;
+      text-align: center;
+      font-weight: 400;
+      letter-spacing: 2px;
+      text-decoration: none;
+      font-family: sans-serif;
+      padding: 20px;
+      text-transform: uppercase;
+      align-self: center;
+      align-items: stretch; }
+      .flex-nav-alt ul a:hover {
+        background-color: white;
+        transition: all .2s;
+        color: #fa0404d2; }
