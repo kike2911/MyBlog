@@ -9,6 +9,9 @@
 html {
 
     background-color:  #220000;
+    position: relative;
+
+    scroll-behavior: smooth;
     
 
     // This defines what 1rem is
@@ -35,6 +38,8 @@ body {
     @include respond(tab-port) {
         padding: 0;
     }
+
+    position: relative;
 }
 
 ::selection {
