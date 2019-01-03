@@ -105,7 +105,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
   box-sizing: inherit; }
 
 html {
-  background-color: #220000;
+  background-color: black;
   position: relative;
   scroll-behavior: smooth;
   font-size: 62.5%; }
@@ -226,6 +226,9 @@ body {
     @media only screen and (max-width: 37.5em) {
       .heading-primary-tyb--sub {
         letter-spacing: .5rem; } }
+
+span.bold {
+  font-weight: 700; }
 
 .bg-video {
   position: absolute;
@@ -633,22 +636,65 @@ body {
 .about-me-general {
   weight: 100vh;
   height: 100vh;
-  display: flex;
-  align-items: center; }
+  padding-top: 2%; }
 
 .about-me {
   background-color: white;
   box-shadow: rgba(255, 255, 255, 0.199);
-  padding: 5rem;
-  margin-bottom: 5rem;
   transition: transform 0.6s ease-in-out;
-  flex: 1; }
-  .about-me .heading-secondary {
-    align-self: center;
-    padding: 2rem; }
-
-.scroll-about-me {
-  transition: transform 0.6s ease-in-out; }
+  border-radius: 5px;
+  display: flex;
+  overflow: hidden;
+  margin: 15rem;
+  height: 70%; }
+  .about-me__header {
+    background-color: black;
+    background-color: rgba(255, 217, 0, 0.623);
+    width: 30%; }
+    .about-me__header__heading-secondary {
+      padding-top: 1.5rem;
+      text-align: center;
+      font-size: 4rem;
+      text-transform: uppercase; }
+    .about-me__header__heading-tertiary {
+      font-size: 2.5rem;
+      padding: 1rem;
+      text-transform: uppercase;
+      font-weight: 500; }
+    .about-me__header__heading-fourth {
+      text-align: center;
+      font-size: 2rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid grey; }
+    .about-me__header ul {
+      padding: 1rem; }
+    .about-me__header li {
+      font-size: 1.5rem; }
+  .about-me .contact__icon {
+    transform: translateY(0.5rem);
+    display: inline-flex;
+    margin-right: 1rem;
+    height: 1.6em;
+    width: 1.6rem;
+    fill: grey; }
+  .about-me__content {
+    width: 70%; }
+    .about-me__content__heading-secondary {
+      padding-top: 1.5rem;
+      text-align: center;
+      font-size: 4rem;
+      text-transform: uppercase; }
+    .about-me__content__heading-tertiary {
+      font-size: 2.5rem;
+      padding: 1rem;
+      text-transform: uppercase;
+      font-weight: 500;
+      border-bottom: 1px solid grey; }
+    .about-me__content__heading-fourth {
+      text-align: center;
+      font-size: 2rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid grey; }
 
 .header {
   height: 85vh;
