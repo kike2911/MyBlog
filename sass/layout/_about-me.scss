@@ -26,7 +26,7 @@
         
 
         &__heading-secondary{
-            padding-top: 1.5rem;
+            padding: 1.5rem;
             text-align: center;
             font-size: 4rem;
             text-transform: uppercase;
@@ -68,7 +68,6 @@
                 transition: all .2s;
                 text-transform: uppercase;
                 font-size: 1.4rem;
-                margin-top: 30%;
                 text-decoration: none;
                 
 
@@ -102,9 +101,16 @@
 
     &__content{
         width: 70%;
+        display: flex;
+        flex-direction: column;
+
+        &__container{
+            height: 93%;
+        }
 
         &__nav-bar{
             display: flex;
+            height: 7%;
             justify-content: space-between;
 
             &__heading-tertiary{
@@ -176,6 +182,7 @@
 
     .profile{
         transition: all .5s;
+        height: 100%;
 
         &__section1{
             display: flex;
@@ -238,40 +245,51 @@
 
     .skills{
         display: flex;
-        height: 92%;
+        height: 100%;
 
         &__nav-bar{
             display: flex;
             flex-direction: column;
-            width: 15%;
+            width: 10%;
             background-color: $color-grey-light-1;
-            text-align: center;
 
             &__item{
                 display: flex;
                 align-items: center;
                 flex: 1;
-                
+                 border-bottom: 1px solid $color-grey-dark-3;
+                //border-right: 1px solid $color-grey-dark-3;
+                justify-content: center;
+                transition: all .3s;
+
+                &-selected{
+                    background-color: white;
+
+                    .skills__nav-bar__item__icon{
+                        fill: $color-grey-light-1 !important;
+                }
+            }
 
                 &__icon{
                     
                     height: 5rem;
                     width: 5rem;
                     fill: white;
+                    }
+
+                    
+                    &:hover{
+                        background-color: white;
+                
+
+                        .skills__nav-bar__item__icon{
+                            fill: $color-grey-light-1 !important;
+                        }
+                    }
                 }
-
             }
-
         }
-
-
         &__content{
-            width: 85%;
-            background-color: red;
-
-
+            width: 90%;
         }
-
     }
-
-}

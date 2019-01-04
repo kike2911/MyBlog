@@ -652,7 +652,7 @@ span.bold {
     background-color: rgba(255, 217, 0, 0.623);
     width: 30%; }
     .about-me__header__heading-secondary {
-      padding-top: 1.5rem;
+      padding: 1.5rem;
       text-align: center;
       font-size: 4rem;
       text-transform: uppercase; }
@@ -683,7 +683,6 @@ span.bold {
         transition: all .2s;
         text-transform: uppercase;
         font-size: 1.4rem;
-        margin-top: 30%;
         text-decoration: none; }
         .about-me__header__button-container .btn-download-cv:hover {
           color: white;
@@ -696,9 +695,14 @@ span.bold {
     width: 1.6rem;
     fill: grey; }
   .about-me__content {
-    width: 70%; }
+    width: 70%;
+    display: flex;
+    flex-direction: column; }
+    .about-me__content__container {
+      height: 93%; }
     .about-me__content__nav-bar {
       display: flex;
+      height: 7%;
       justify-content: space-between; }
       .about-me__content__nav-bar__heading-tertiary {
         text-align: center;
@@ -743,7 +747,8 @@ span.bold {
       max-width: 70%;
       max-height: 100%; }
   .about-me .profile {
-    transition: all .5s; }
+    transition: all .5s;
+    height: 100%; }
     .about-me .profile__section1 {
       display: flex; }
     .about-me .profile__icon {
@@ -777,24 +782,33 @@ span.bold {
       width: 100%; }
   .about-me .skills {
     display: flex;
-    height: 92%; }
+    height: 100%; }
     .about-me .skills__nav-bar {
       display: flex;
       flex-direction: column;
-      width: 15%;
-      background-color: grey;
-      text-align: center; }
+      width: 10%;
+      background-color: grey; }
       .about-me .skills__nav-bar__item {
         display: flex;
         align-items: center;
-        flex: 1; }
+        flex: 1;
+        border-bottom: 1px solid #333;
+        justify-content: center;
+        transition: all .3s; }
+        .about-me .skills__nav-bar__item-selected {
+          background-color: white; }
+          .about-me .skills__nav-bar__item-selected .skills__nav-bar__item__icon {
+            fill: grey !important; }
         .about-me .skills__nav-bar__item__icon {
           height: 5rem;
           width: 5rem;
           fill: white; }
-    .about-me .skills__content {
-      width: 85%;
-      background-color: red; }
+        .about-me .skills__nav-bar__item:hover {
+          background-color: white; }
+          .about-me .skills__nav-bar__item:hover .skills__nav-bar__item__icon {
+            fill: grey !important; }
+  .about-me__content {
+    width: 90%; }
 
 .header {
   height: 85vh;
