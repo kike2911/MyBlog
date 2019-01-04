@@ -175,8 +175,11 @@
     }
 
     .profile{
-        display: flex;
         transition: all .5s;
+
+        &__section1{
+            display: flex;
+        }
 
         &__icon{
             transform: translateY(.2rem);
@@ -221,5 +224,54 @@
             }
         }
 
+        &__picture{
+
+
+            &__img{
+                height: 100%;
+                width: 100%;
+            }
+
+        }
+
     }
+
+    .skills{
+        display: flex;
+        height: 92%;
+
+        &__nav-bar{
+            display: flex;
+            flex-direction: column;
+            width: 15%;
+            background-color: $color-grey-light-1;
+            text-align: center;
+
+            &__item{
+                display: flex;
+                align-items: center;
+                flex: 1;
+                
+
+                &__icon{
+                    
+                    height: 5rem;
+                    width: 5rem;
+                    fill: white;
+                }
+
+            }
+
+        }
+
+
+        &__content{
+            width: 85%;
+            background-color: red;
+
+
+        }
+
+    }
+
 }

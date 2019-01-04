@@ -743,8 +743,9 @@ span.bold {
       max-width: 70%;
       max-height: 100%; }
   .about-me .profile {
-    display: flex;
     transition: all .5s; }
+    .about-me .profile__section1 {
+      display: flex; }
     .about-me .profile__icon {
       transform: translateY(0.2rem);
       margin-right: 1rem;
@@ -771,6 +772,29 @@ span.bold {
           background-color: rgba(255, 217, 0, 0.623); }
         .about-me .profile__values-container-item:not(:first-child) {
           margin-top: .5rem; }
+    .about-me .profile__picture__img {
+      height: 100%;
+      width: 100%; }
+  .about-me .skills {
+    display: flex;
+    height: 92%; }
+    .about-me .skills__nav-bar {
+      display: flex;
+      flex-direction: column;
+      width: 15%;
+      background-color: grey;
+      text-align: center; }
+      .about-me .skills__nav-bar__item {
+        display: flex;
+        align-items: center;
+        flex: 1; }
+        .about-me .skills__nav-bar__item__icon {
+          height: 5rem;
+          width: 5rem;
+          fill: white; }
+    .about-me .skills__content {
+      width: 85%;
+      background-color: red; }
 
 .header {
   height: 85vh;
