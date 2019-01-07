@@ -135,5 +135,29 @@
         }
     }
 
-
+    @-webkit-keyframes slide-left {
+        0% {
+          -webkit-transform: translateX(200%);
+       }
+       70% {
+         -webkit-transform: translateX(2%);
+       }
+       100% {
+         -webkit-transform: translateX(0);
+       }
+     }
+     
+     @keyframes slide-left {
+       0% {
+         -webkit-transform: translateX(200%);
+       }
+       
+       70% {
+         -webkit-transform: translateX(2%);
+       }
+       
+       100% {
+         -webkit-transform: translateX(0);
+       }
+     }
 

@@ -27,10 +27,20 @@ $(document).ready(function(){
     
 $(document).ready(function(){
 	$('.skills__nav-bar__item').bind('click', function() {
-		$('.skills-robotics').hide();
+		$('.skills-eyelash').hide();
 		$('#' + $(this).attr('id') + '-skills-content').show();
 		$('.skills__nav-bar__item').removeClass('skills__nav-bar__item-selected');
 		$(this).addClass('skills__nav-bar__item-selected');
+	});
+	
+});
+
+$(document).ready(function(){
+	$('.experience__nav-bar__item').bind('click', function() {
+		$('.experience-eyelash').hide();
+		$('#' + $(this).attr('id') + '-experience-content').show();
+		$('.experience__nav-bar__item').removeClass('experience__nav-bar__item-selected');
+		$(this).addClass('experience__nav-bar__item-selected');
 	});
 	
 });

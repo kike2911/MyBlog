@@ -233,7 +233,6 @@
 
         &__picture{
 
-
             &__img{
                 height: 100%;
                 width: 100%;
@@ -246,6 +245,14 @@
     .skills{
         display: flex;
         height: 100%;
+
+        .skills-bar__icon{
+            height: 2.2rem;
+            width: 2.2rem;
+            fill: white;
+            margin-right: 1rem;
+            transform: translateY(3px);
+        }
 
         &__nav-bar{
             display: flex;
@@ -288,8 +295,498 @@
                     }
                 }
             }
+
+            &__content{
+                width: 90%;
+            }
+
+            
+
+            &-robotics{
+                height: 100%;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+
+                .btn__skills__see-more{
+                    border: none;
+                padding: 1rem;
+                border-radius: 3px;
+                color: $color-grey-light-1;
+                background-color: white;
+                transition: all .2s;
+                text-transform: uppercase;
+                font-size: 1.4rem;
+                text-decoration: none;
+                height: 4rem;
+                width: 10rem;
+                text-align: center;
+
+                &:hover{
+                    color: white;
+                    background-color: $color-grey-light-1;
+                }
+                }
+
+                &__header{
+                    
+                    &__heading{
+                        text-align: center;
+                        font-size: 7rem;
+                        animation: slide-left 1s ease-in-out;
+                    -webkit-animation: slide-left 1s ease-in-out;
+                    }
+                }
+
+                &__description{
+                    display: flex;
+
+                    &__paragraph{
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: flex-end;
+                        padding: 1rem; 
+                        background-color: $color-secondary-light;
+                        margin: 2rem;
+                        font-size: 1.4rem;
+                    }
+
+                    &__video{
+                        margin-right: 2rem;
+                    }
+                }
+
+
+                /////////////////////ROBOTICS SKILLS BAR GRAPH///////////////////////
+
+                &__bar-graph-container {
+                    border-left: 1px solid #333;
+                    border-bottom: 1px solid #333; 
+                    overflow: hidden;
+                    margin: 2rem;
+                  }
+                  
+                  &__bar-graph-container p {
+                    padding: 1.5rem;
+                    color: #fff;
+                    font-size: 1.8rem;
+                  }
+                  
+                  &-bar-container {
+                       background-color: $color-secondary-light;   
+                  }
+                  
+                  &-html {
+                    width:80%;
+                    background-color: $color-grey-dark;
+                    animation: slide-left 0.9s ease-in-out 1s both;
+                    -webkit-animation: slide-left 0.9s ease-in-out 1s both;
+                    animation-delay: 0.1s;
+                    -webkit-animation-delay: 0.1s;
+                    margin: 1rem 0;
+                  }
+                  
+                  &-css {
+                    width: 55%;
+                    background-color: $color-grey-dark;
+                    animation: slide-left 1s ease-in-out 1s both;
+                   -webkit-animation: slide-left 1s ease-in-out 1s both;
+                     animation-delay: 0.2s;
+                    -webkit-animation-delay: 0.2s;
+                    margin: 1rem 0;
+                  }
+                  
+                  &-js {
+                    width: 70%;
+                    background-color: $color-grey-dark;
+                    animation: slide-left 1s ease-in-out 1s both;
+                    -webkit-animation: slide-left 1s ease-in-out 1s both;
+                     animation-delay: 0.3s;
+                    -webkit-animation-delay: 0.3s;
+                    margin: 1rem 0;
+                  }
+                  
+                  &-php {
+                    width: 50%;
+                    background-color: $color-grey-dark;
+                    animation: slide-left 1s ease-in-out 1s both;
+                    -webkit-animation: slide-left 1s ease-in-out 1s both;
+                     animation-delay: 0.2s;
+                    -webkit-animation-delay: 0.2s;
+                    margin: 1rem 0;
+                  }
+                  
+                  &-drupal {
+                    width: 60%;
+                    background-color: $color-grey-dark;
+                    animation: slide-left 1s ease-in-out 1s both;
+                    -webkit-animation: slide-left 1s ease-in-out 1s both;
+                     animation-delay: 0.1s;
+                    -webkit-animation-delay: 0.1s;
+                    margin-top: 1rem;
+                  } 
+
+            }
+
+            &-music{
+                height: 100%;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+
+                .btn__skills-music__see-more{
+                    border: none;
+                padding: 1rem;
+                border-radius: 3px;
+                color: $color-grey-light-1;
+                background-color: white;
+                transition: all .2s;
+                text-transform: uppercase;
+                font-size: 1.4rem;
+                text-decoration: none;
+                height: 4rem;
+                width: 10rem;
+                text-align: center;
+
+                &:hover{
+                    color: white;
+                    background-color: $color-grey-light-1;
+                }
+                }
+
+                &__header{
+                    
+                    &__heading{
+                        text-align: center;
+                        font-size: 7rem;
+                        animation: slide-left 1s ease-in-out;
+                    -webkit-animation: slide-left 1s ease-in-out;
+                    }
+                }
+
+                &__description{
+                    display: flex;
+                    
+
+                    &__paragraph{
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: flex-end;
+                        padding: 1rem; 
+                        background-color: $color-secondary-light;
+                        margin: 2rem;
+                        font-size: 1.4rem;
+                    }
+
+                    &__video{
+                        margin-right: 2rem;
+                    }
+                }
+
+
+                /////////////////////MUSIC SKILLS BAR GRAPH///////////////////////
+
+                &__bar-graph-container {
+                    border-left: 1px solid #333;
+                    border-bottom: 1px solid #333; 
+                    overflow: hidden;
+                    margin: 2rem;
+                  }
+                  
+                  &__bar-graph-container p {
+                    padding: 1.5rem;
+                    color: #fff;
+                    font-size: 1.8rem;
+                  }
+                  
+                  &-bar-container {
+                       background-color: $color-secondary-light;   
+                  }
+                  
+                  &-html {
+                    width: 95%;
+                    background-color: $color-grey-dark;
+                    animation: slide-left 0.9s ease-in-out 1s both;
+                    -webkit-animation: slide-left 0.9s ease-in-out 1s both;
+                    animation-delay: 0.1s;
+                    -webkit-animation-delay: 0.1s;
+                    margin: 1rem 0;
+                  }
+                  
+                  &-css {
+                    width: 75%;
+                    background-color: $color-grey-dark;
+                    animation: slide-left 1s ease-in-out 1s both;
+                   -webkit-animation: slide-left 1s ease-in-out 1s both;
+                     animation-delay: 0.2s;
+                    -webkit-animation-delay: 0.2s;
+                    margin: 1rem 0;
+                  }
+                  
+                  &-js {
+                    width: 80%;
+                    background-color: $color-grey-dark;
+                    animation: slide-left 1s ease-in-out 1s both;
+                    -webkit-animation: slide-left 1s ease-in-out 1s both;
+                     animation-delay: 0.3s;
+                    -webkit-animation-delay: 0.3s;
+                    margin: 1rem 0;
+                  }
+                  
+                  &-php {
+                    width: 40%;
+                    background-color: $color-grey-dark;
+                    animation: slide-left 1s ease-in-out 1s both;
+                    -webkit-animation: slide-left 1s ease-in-out 1s both;
+                     animation-delay: 0.2s;
+                    -webkit-animation-delay: 0.2s;
+                    margin: 1rem 0;
+                  }
+                  
+                  &-drupal {
+                    width: 30%;
+                    background-color: $color-grey-dark;
+                    animation: slide-left 1s ease-in-out 1s both;
+                    -webkit-animation: slide-left 1s ease-in-out 1s both;
+                     animation-delay: 0.1s;
+                    -webkit-animation-delay: 0.1s;
+                    margin-top: 1rem;
+                  } 
+            }
+
+            &-web-design{
+                height: 100%;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+
+                .btn__skills-web-design__see-more{
+                    border: none;
+                padding: 1rem;
+                border-radius: 3px;
+                color: $color-grey-light-1;
+                background-color: white;
+                transition: all .2s;
+                text-transform: uppercase;
+                font-size: 1.4rem;
+                text-decoration: none;
+                height: 4rem;
+                width: 10rem;
+                text-align: center;
+
+                &:hover{
+                    color: white;
+                    background-color: $color-grey-light-1;
+                }
+                }
+
+                &__header{
+                    
+                    &__heading{
+                        text-align: center;
+                        font-size: 7rem;
+                        animation: slide-left 1s ease-in-out;
+                    -webkit-animation: slide-left 1s ease-in-out;
+                    }
+                }
+
+                &__description{
+                    display: flex;
+                    
+
+                    &__paragraph{
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: flex-end;
+                        padding: 1rem; 
+                        background-color: $color-secondary-light;
+                        margin: 2rem;
+                        font-size: 1.4rem;
+                    }
+
+                    &__video{
+                        margin-right: 2rem;
+                    }
+                }
+
+
+                /////////////////////WEB DESIGN SKILLS BAR GRAPH///////////////////////
+
+                &__bar-graph-container {
+                    border-left: 1px solid #333;
+                    border-bottom: 1px solid #333; 
+                    overflow: hidden;
+                    margin: 2rem;
+                  }
+                  
+                  &__bar-graph-container p {
+                    padding: 1.5rem;
+                    color: #fff;
+                    font-size: 1.8rem;
+                  }
+                  
+                  &-bar-container {
+                       background-color: $color-secondary-light;   
+                  }
+                  
+                  &-html {
+                    width: 100%;
+                    background-color: $color-grey-dark;
+                    animation: slide-left 0.9s ease-in-out 1s both;
+                    -webkit-animation: slide-left 0.9s ease-in-out 1s both;
+                    animation-delay: 0.1s;
+                    -webkit-animation-delay: 0.1s;
+                    margin: 1rem 0;
+                  }
+                  
+                  &-css {
+                    width: 100%;
+                    background-color: $color-grey-dark;
+                    animation: slide-left 1s ease-in-out 1s both;
+                   -webkit-animation: slide-left 1s ease-in-out 1s both;
+                     animation-delay: 0.2s;
+                    -webkit-animation-delay: 0.2s;
+                    margin: 1rem 0;
+                  }
+                  
+                  &-js {
+                    width: 50%;
+                    background-color: $color-grey-dark;
+                    animation: slide-left 1s ease-in-out 1s both;
+                    -webkit-animation: slide-left 1s ease-in-out 1s both;
+                     animation-delay: 0.3s;
+                    -webkit-animation-delay: 0.3s;
+                    margin: 1rem 0;
+                  }
+                  
+                  &-php {
+                    width: 90%;
+                    background-color: $color-grey-dark;
+                    animation: slide-left 1s ease-in-out 1s both;
+                    -webkit-animation: slide-left 1s ease-in-out 1s both;
+                     animation-delay: 0.2s;
+                    -webkit-animation-delay: 0.2s;
+                    margin: 1rem 0;
+                  }
+                  
+                  &-drupal {
+                    width: 30%;
+                    background-color: $color-grey-dark;
+                    animation: slide-left 1s ease-in-out 1s both;
+                    -webkit-animation: slide-left 1s ease-in-out 1s both;
+                     animation-delay: 0.1s;
+                    -webkit-animation-delay: 0.1s;
+                    margin-top: 1rem;
+                  } 
+            }
+
+        }//skills
+    } //about-me
+
+
+///////////////////////////////EXPERIENCE///////////////////
+
+    .experience{
+        display: flex;
+        height: 100%;
+
+        .skills-bar__icon{
+            height: 2.2rem;
+            width: 2.2rem;
+            fill: white;
+            margin-right: 1rem;
+            transform: translateY(3px);
         }
-        &__content{
-            width: 90%;
-        }
-    }
+
+        &__nav-bar{
+            display: flex;
+            flex-direction: column;
+            width: 10%;
+            background-color: $color-grey-light-1;
+
+            &__item{
+                display: flex;
+                align-items: center;
+                flex: 1;
+                 border-bottom: 1px solid $color-grey-dark-3;
+                //border-right: 1px solid $color-grey-dark-3;
+                justify-content: center;
+                transition: all .3s;
+
+                &-selected{
+                    background-color: white;
+
+                    .experience__nav-bar__item__icon{
+                        fill: $color-grey-light-1 !important;
+                }
+            }
+
+                &__icon{
+                    
+                    height: 5rem;
+                    width: 5rem;
+                    fill: white;
+                    }
+
+                    
+                    &:hover{
+                        background-color: white;
+                
+
+                        .experience__nav-bar__item__icon{
+                            fill: $color-grey-light-1 !important;
+                        }
+                    }
+                }
+            }
+
+            &__content{
+                width: 90%;
+            }
+
+            &-robotics{
+                height: 100%;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+
+                &__main{
+                    height: 33.3%;
+
+                    &-img{
+                        height: 100%;
+                        background-color: red;
+                    }
+                }
+
+                
+                    
+
+                    &__container1{
+                        display: flex;
+                        flex-wrap: column;
+
+                        &__paragraph{
+                            height: 20%;
+                        }
+
+                        &__list{
+                            height: 80%;
+                        }
+
+                    
+                    }
+                }
+
+                
+
+            } ////EXPERIENCE ROBOTICS
+
+            &-music{
+
+            }
+
+            &-web-design{
+
+            }
+        }//EXPERIENCE

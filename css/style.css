@@ -80,6 +80,22 @@
     opacity: 0;
     transform: translate(0); } }
 
+@-webkit-keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(200%); }
+  70% {
+    -webkit-transform: translateX(2%); }
+  100% {
+    -webkit-transform: translateX(0); } }
+
+@keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(200%); }
+  70% {
+    -webkit-transform: translateX(2%); }
+  100% {
+    -webkit-transform: translateX(0); } }
+
 /*
 0 - 600px:      Phone
 600 - 900px:    Tablet portrait
@@ -380,7 +396,7 @@ span.bold {
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
     border-bottom: 3px solid #ffffff2c; }
   .form__input:focus:invalid {
-    border-bottom: 3px solid #ff7730; }
+    border-bottom: 3px solid #474040; }
   .form__input::-webkit-input-placeholder {
     color: #999; }
 
@@ -610,7 +626,7 @@ span.bold {
   align-items: center;
   justify-content: center;
   height: 85vh;
-  background-image: linear-gradient(to right bottom, rgba(5, 255, 88, 0.3), rgba(0, 133, 44, 0.3)), url(../../img/tyb.jpg);
+  background-image: linear-gradient(to right bottom, rgba(5, 255, 88, 0.3), rgba(0, 133, 44, 0.3)), url(../img/tyb.jpg);
   background-size: cover;
   background-position: top;
   position: relative; }
@@ -783,6 +799,12 @@ span.bold {
   .about-me .skills {
     display: flex;
     height: 100%; }
+    .about-me .skills .skills-bar__icon {
+      height: 2.2rem;
+      width: 2.2rem;
+      fill: white;
+      margin-right: 1rem;
+      transform: translateY(3px); }
     .about-me .skills__nav-bar {
       display: flex;
       flex-direction: column;
@@ -807,12 +829,336 @@ span.bold {
           background-color: white; }
           .about-me .skills__nav-bar__item:hover .skills__nav-bar__item__icon {
             fill: grey !important; }
-  .about-me__content {
+    .about-me .skills__content {
+      width: 90%; }
+    .about-me .skills-robotics {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column; }
+      .about-me .skills-robotics .btn__skills__see-more {
+        border: none;
+        padding: 1rem;
+        border-radius: 3px;
+        color: grey;
+        background-color: white;
+        transition: all .2s;
+        text-transform: uppercase;
+        font-size: 1.4rem;
+        text-decoration: none;
+        height: 4rem;
+        width: 10rem;
+        text-align: center; }
+        .about-me .skills-robotics .btn__skills__see-more:hover {
+          color: white;
+          background-color: grey; }
+      .about-me .skills-robotics__header__heading {
+        text-align: center;
+        font-size: 7rem;
+        animation: slide-left 1s ease-in-out;
+        -webkit-animation: slide-left 1s ease-in-out; }
+      .about-me .skills-robotics__description {
+        display: flex; }
+        .about-me .skills-robotics__description__paragraph {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: flex-end;
+          padding: 1rem;
+          background-color: rgba(255, 217, 0, 0.623);
+          margin: 2rem;
+          font-size: 1.4rem; }
+        .about-me .skills-robotics__description__video {
+          margin-right: 2rem; }
+      .about-me .skills-robotics__bar-graph-container {
+        border-left: 1px solid #333;
+        border-bottom: 1px solid #333;
+        overflow: hidden;
+        margin: 2rem; }
+      .about-me .skills-robotics__bar-graph-container p {
+        padding: 1.5rem;
+        color: #fff;
+        font-size: 1.8rem; }
+      .about-me .skills-robotics-bar-container {
+        background-color: rgba(255, 217, 0, 0.623); }
+      .about-me .skills-robotics-html {
+        width: 80%;
+        background-color: #777;
+        animation: slide-left 0.9s ease-in-out 1s both;
+        -webkit-animation: slide-left 0.9s ease-in-out 1s both;
+        animation-delay: 0.1s;
+        -webkit-animation-delay: 0.1s;
+        margin: 1rem 0; }
+      .about-me .skills-robotics-css {
+        width: 55%;
+        background-color: #777;
+        animation: slide-left 1s ease-in-out 1s both;
+        -webkit-animation: slide-left 1s ease-in-out 1s both;
+        animation-delay: 0.2s;
+        -webkit-animation-delay: 0.2s;
+        margin: 1rem 0; }
+      .about-me .skills-robotics-js {
+        width: 70%;
+        background-color: #777;
+        animation: slide-left 1s ease-in-out 1s both;
+        -webkit-animation: slide-left 1s ease-in-out 1s both;
+        animation-delay: 0.3s;
+        -webkit-animation-delay: 0.3s;
+        margin: 1rem 0; }
+      .about-me .skills-robotics-php {
+        width: 50%;
+        background-color: #777;
+        animation: slide-left 1s ease-in-out 1s both;
+        -webkit-animation: slide-left 1s ease-in-out 1s both;
+        animation-delay: 0.2s;
+        -webkit-animation-delay: 0.2s;
+        margin: 1rem 0; }
+      .about-me .skills-robotics-drupal {
+        width: 60%;
+        background-color: #777;
+        animation: slide-left 1s ease-in-out 1s both;
+        -webkit-animation: slide-left 1s ease-in-out 1s both;
+        animation-delay: 0.1s;
+        -webkit-animation-delay: 0.1s;
+        margin-top: 1rem; }
+    .about-me .skills-music {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column; }
+      .about-me .skills-music .btn__skills-music__see-more {
+        border: none;
+        padding: 1rem;
+        border-radius: 3px;
+        color: grey;
+        background-color: white;
+        transition: all .2s;
+        text-transform: uppercase;
+        font-size: 1.4rem;
+        text-decoration: none;
+        height: 4rem;
+        width: 10rem;
+        text-align: center; }
+        .about-me .skills-music .btn__skills-music__see-more:hover {
+          color: white;
+          background-color: grey; }
+      .about-me .skills-music__header__heading {
+        text-align: center;
+        font-size: 7rem;
+        animation: slide-left 1s ease-in-out;
+        -webkit-animation: slide-left 1s ease-in-out; }
+      .about-me .skills-music__description {
+        display: flex; }
+        .about-me .skills-music__description__paragraph {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: flex-end;
+          padding: 1rem;
+          background-color: rgba(255, 217, 0, 0.623);
+          margin: 2rem;
+          font-size: 1.4rem; }
+        .about-me .skills-music__description__video {
+          margin-right: 2rem; }
+      .about-me .skills-music__bar-graph-container {
+        border-left: 1px solid #333;
+        border-bottom: 1px solid #333;
+        overflow: hidden;
+        margin: 2rem; }
+      .about-me .skills-music__bar-graph-container p {
+        padding: 1.5rem;
+        color: #fff;
+        font-size: 1.8rem; }
+      .about-me .skills-music-bar-container {
+        background-color: rgba(255, 217, 0, 0.623); }
+      .about-me .skills-music-html {
+        width: 95%;
+        background-color: #777;
+        animation: slide-left 0.9s ease-in-out 1s both;
+        -webkit-animation: slide-left 0.9s ease-in-out 1s both;
+        animation-delay: 0.1s;
+        -webkit-animation-delay: 0.1s;
+        margin: 1rem 0; }
+      .about-me .skills-music-css {
+        width: 75%;
+        background-color: #777;
+        animation: slide-left 1s ease-in-out 1s both;
+        -webkit-animation: slide-left 1s ease-in-out 1s both;
+        animation-delay: 0.2s;
+        -webkit-animation-delay: 0.2s;
+        margin: 1rem 0; }
+      .about-me .skills-music-js {
+        width: 80%;
+        background-color: #777;
+        animation: slide-left 1s ease-in-out 1s both;
+        -webkit-animation: slide-left 1s ease-in-out 1s both;
+        animation-delay: 0.3s;
+        -webkit-animation-delay: 0.3s;
+        margin: 1rem 0; }
+      .about-me .skills-music-php {
+        width: 40%;
+        background-color: #777;
+        animation: slide-left 1s ease-in-out 1s both;
+        -webkit-animation: slide-left 1s ease-in-out 1s both;
+        animation-delay: 0.2s;
+        -webkit-animation-delay: 0.2s;
+        margin: 1rem 0; }
+      .about-me .skills-music-drupal {
+        width: 30%;
+        background-color: #777;
+        animation: slide-left 1s ease-in-out 1s both;
+        -webkit-animation: slide-left 1s ease-in-out 1s both;
+        animation-delay: 0.1s;
+        -webkit-animation-delay: 0.1s;
+        margin-top: 1rem; }
+    .about-me .skills-web-design {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column; }
+      .about-me .skills-web-design .btn__skills-web-design__see-more {
+        border: none;
+        padding: 1rem;
+        border-radius: 3px;
+        color: grey;
+        background-color: white;
+        transition: all .2s;
+        text-transform: uppercase;
+        font-size: 1.4rem;
+        text-decoration: none;
+        height: 4rem;
+        width: 10rem;
+        text-align: center; }
+        .about-me .skills-web-design .btn__skills-web-design__see-more:hover {
+          color: white;
+          background-color: grey; }
+      .about-me .skills-web-design__header__heading {
+        text-align: center;
+        font-size: 7rem;
+        animation: slide-left 1s ease-in-out;
+        -webkit-animation: slide-left 1s ease-in-out; }
+      .about-me .skills-web-design__description {
+        display: flex; }
+        .about-me .skills-web-design__description__paragraph {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: flex-end;
+          padding: 1rem;
+          background-color: rgba(255, 217, 0, 0.623);
+          margin: 2rem;
+          font-size: 1.4rem; }
+        .about-me .skills-web-design__description__video {
+          margin-right: 2rem; }
+      .about-me .skills-web-design__bar-graph-container {
+        border-left: 1px solid #333;
+        border-bottom: 1px solid #333;
+        overflow: hidden;
+        margin: 2rem; }
+      .about-me .skills-web-design__bar-graph-container p {
+        padding: 1.5rem;
+        color: #fff;
+        font-size: 1.8rem; }
+      .about-me .skills-web-design-bar-container {
+        background-color: rgba(255, 217, 0, 0.623); }
+      .about-me .skills-web-design-html {
+        width: 100%;
+        background-color: #777;
+        animation: slide-left 0.9s ease-in-out 1s both;
+        -webkit-animation: slide-left 0.9s ease-in-out 1s both;
+        animation-delay: 0.1s;
+        -webkit-animation-delay: 0.1s;
+        margin: 1rem 0; }
+      .about-me .skills-web-design-css {
+        width: 100%;
+        background-color: #777;
+        animation: slide-left 1s ease-in-out 1s both;
+        -webkit-animation: slide-left 1s ease-in-out 1s both;
+        animation-delay: 0.2s;
+        -webkit-animation-delay: 0.2s;
+        margin: 1rem 0; }
+      .about-me .skills-web-design-js {
+        width: 50%;
+        background-color: #777;
+        animation: slide-left 1s ease-in-out 1s both;
+        -webkit-animation: slide-left 1s ease-in-out 1s both;
+        animation-delay: 0.3s;
+        -webkit-animation-delay: 0.3s;
+        margin: 1rem 0; }
+      .about-me .skills-web-design-php {
+        width: 90%;
+        background-color: #777;
+        animation: slide-left 1s ease-in-out 1s both;
+        -webkit-animation: slide-left 1s ease-in-out 1s both;
+        animation-delay: 0.2s;
+        -webkit-animation-delay: 0.2s;
+        margin: 1rem 0; }
+      .about-me .skills-web-design-drupal {
+        width: 30%;
+        background-color: #777;
+        animation: slide-left 1s ease-in-out 1s both;
+        -webkit-animation: slide-left 1s ease-in-out 1s both;
+        animation-delay: 0.1s;
+        -webkit-animation-delay: 0.1s;
+        margin-top: 1rem; }
+
+.experience {
+  display: flex;
+  height: 100%; }
+  .experience .skills-bar__icon {
+    height: 2.2rem;
+    width: 2.2rem;
+    fill: white;
+    margin-right: 1rem;
+    transform: translateY(3px); }
+  .experience__nav-bar {
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+    background-color: grey; }
+    .experience__nav-bar__item {
+      display: flex;
+      align-items: center;
+      flex: 1;
+      border-bottom: 1px solid #333;
+      justify-content: center;
+      transition: all .3s; }
+      .experience__nav-bar__item-selected {
+        background-color: white; }
+        .experience__nav-bar__item-selected .experience__nav-bar__item__icon {
+          fill: grey !important; }
+      .experience__nav-bar__item__icon {
+        height: 5rem;
+        width: 5rem;
+        fill: white; }
+      .experience__nav-bar__item:hover {
+        background-color: white; }
+        .experience__nav-bar__item:hover .experience__nav-bar__item__icon {
+          fill: grey !important; }
+  .experience__content {
     width: 90%; }
+  .experience-robotics {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column; }
+    .experience-robotics__main {
+      height: 33.3%; }
+      .experience-robotics__main-img {
+        height: 100%;
+        background-color: red; }
+    .experience-robotics__description {
+      height: 66.6%;
+      display: flex;
+      flex-wrap: column; }
+      .experience-robotics__description__container1 {
+        display: flex;
+        flex-wrap: column; }
+        .experience-robotics__description__container1__paragraph {
+          height: 20%; }
+        .experience-robotics__description__container1__list {
+          height: 80%; }
 
 .header {
   height: 85vh;
-  background-image: linear-gradient(to right bottom, rgba(250, 4, 4, 0.8), rgba(14, 1, 1, 0.8)), url(../../img/hero.jpg);
+  background-image: linear-gradient(to right bottom, rgba(250, 4, 4, 0.8), rgba(14, 1, 1, 0.8)), url(../img/hero.jpg);
   background-size: cover;
   background-position: top;
   position: relative; }
