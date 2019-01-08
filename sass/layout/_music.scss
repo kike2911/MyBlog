@@ -1,0 +1,56 @@
+.music{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    -webkit-clip-path: polygon(23% 0, 100% 0%, 100% 100%, 23% 100%);
+clip-path: polygon(23% 0, 100% 0%, 100% 100%, 23% 100%);
+
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(122, 5, 255, 0.3),
+        rgba(29, 2, 59, 0.3)),
+    url(../../img/blur.jpg);
+    background-size: cover;
+    background-position: top;
+    position: relative;
+
+    @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+        //clip-path: polygon(100% 0, 100% 100%, 84% 95%, 100% 0, 81% 94%, 67% 89%, 100% 0, 65% 88%, 43% 81%, 100% 0, 40% 81%, 19% 81%, 0 81%, 100% 0, 0 78%, 0 52%, 100% 0, 0 50%, 0 35%, 100% 0, 0 33%, 0 19%, 100% 0, 0 17%, 0 7%, 100% 0, 0 5%, 0 0);
+        
+        -webkit-clip-path: polygon(23% 0, 100% 0%, 100% 100%, 23% 100%);
+clip-path: polygon(23% 0, 100% 0%, 100% 100%, 23% 100%);
+        height: 100vh;
+z-index: 1000;
+        
+    }
+
+    &__heading{
+        text-align: center;
+        position: absolute;
+        left: 9%;
+    }
+
+    &__contain{
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+
+
+        &__testimonial{
+            padding: 1rem;
+            height: auto;
+            width: 50rem;
+            margin-bottom: 6rem;
+            background-color: rgba(255, 255, 255, 0.397);
+            border-radius: 2px;
+
+            &__paragraph{
+                font-size: 2rem;
+                color: white;
+            }
+        }
+    }
+}

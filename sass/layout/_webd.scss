@@ -1,0 +1,46 @@
+.webd{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background-image:
+    //  linear-gradient(
+    //     to right bottom,
+    //     rgba(22, 5, 255, 0.3),
+    //     rgba(2, 6, 59, 0.3)),
+    url(../../img/earth-lights.jpg);
+    background-size: cover;
+    background-position: top;
+    position: relative;
+
+    &__heading{
+        text-align: center;
+    }
+
+    &__contain{
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+
+
+        &__testimonial{
+            padding: 1rem;
+            height: auto;
+            width: 50rem;
+            margin-bottom: 6rem;
+            background-color: rgba(255, 255, 255, 0.397);
+            border-radius: 2px;
+
+            &__paragraph{
+                font-size: 2rem;
+                color: white;
+            }
+        }
+    }
+}
+.border-white{
+    padding: 1rem;
+    border: 1rem solid white;
+}

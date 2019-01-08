@@ -163,22 +163,7 @@
 
     }
 
-    .main-question__container{
-        display: flex;
-        align-items: stretch;
-  justify-content: center;
-  margin: 20% 0;
-  transition: all .5s;
-
-
-        .about-me__main-question{
-            font-size: 8rem;
-            text-align: center;
-            max-width: 70%;
-            max-height: 100%;
-        }
-
-    }
+    
 
     .profile{
         transition: all .5s;
@@ -759,22 +744,26 @@
                     }
                 }
 
-                
-                    
+                &__content{
+                    height: 66.7%; 
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    padding: 2rem;
+                }
 
-                    &__container1{
-                        display: flex;
-                        flex-wrap: column;
+                &__item{
+                    background-color: rgba(255, 217, 0, 0.623);
+                    padding: 1rem;
+                    animation: slide-left 1s ease-in-out .3s both;
+                    -webkit-animation: slide-left 1s ease-in-out .3s both;
 
-                        &__paragraph{
-                            height: 20%;
-                        }
+                    &__heading{
+                        font-size: 1.4rem;
+                    }
 
-                        &__list{
-                            height: 80%;
-                        }
-
-                    
+                    &__paragraph{
+                        font-size: 1.2rem;
                     }
                 }
 
@@ -783,10 +772,126 @@
             } ////EXPERIENCE ROBOTICS
 
             &-music{
+                height: 100%;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
 
+                &__main{
+                    height: 33.3%;
+
+                    &-img{
+                        height: 100%;
+                        background-color: red;
+                    }
+                }
+
+                &__content{
+                    height: 33.3%; 
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    padding: 2rem;
+                }
+
+                &__item{
+                    background-color: rgba(255, 217, 0, 0.623);
+                    padding: 1rem;
+                    animation: slide-left 1s ease-in-out .3s both;
+                    -webkit-animation: slide-left 1s ease-in-out .3s both;
+
+                    &__heading{
+                        font-size: 1.4rem;
+                    }
+
+                    &__paragraph{
+                        font-size: 1.2rem;
+                    }
             }
+        }
 
             &-web-design{
+                height: 100%;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+
+                &__main{
+                    height: 33.3%;
+
+                    &-img{
+                        height: 100%;
+                        background-color: red;
+                    }
+                }
+
+                &__content{
+                    height: 66.7%; 
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    padding: 2rem;
+                }
+
+                &__item{
+                    background-color: rgba(255, 217, 0, 0.623);
+                    padding: 1rem;
+                    animation: slide-left 1s ease-in-out .3s both;
+                    -webkit-animation: slide-left 1s ease-in-out .3s both;
+
+                    &__heading{
+                        font-size: 1.4rem;
+                    }
+
+                    &__paragraph{
+                        font-size: 1.2rem;
+                    }
+            }
+        }
+        }//EXPERIENCE
+
+
+/////////////////////////////EDUCATION
+
+.education{
+    height: 100%;
+    display: flex;
+
+    &__content{
+        margin: 4rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        &__container{
+
+        }
+
+        &__item{
+            padding: 2rem;
+            border: $color-grey-dark-3;
+            border: 1px solid $color-grey-dark;
+            z-index: 10;
+
+            &__heading{
+                font-size: 2rem;
+                transform: translate(1.5rem, 1.5rem);
+                // transform: translateX(2rem);
+                
+            }
+
+            &__paragraph{
 
             }
-        }//EXPERIENCE
+        }
+    }
+
+    
+
+}
+
+ .education__white{
+     padding: 1rem;
+    background-color: white;
+    flex-grow: 0;
+}
