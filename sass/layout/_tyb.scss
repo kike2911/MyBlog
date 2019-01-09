@@ -10,7 +10,8 @@
         rgba(0, 133, 44, 0.3)),
     url(../img/tyb.jpg);
     background-size: cover;
-    background-position: top;
+    background-position: center;
+    // background-position: top;
     position: relative;
     
     
@@ -19,6 +20,7 @@
         //clip-path: polygon(100% 0, 100% 100%, 84% 95%, 100% 0, 81% 94%, 67% 89%, 100% 0, 65% 88%, 43% 81%, 100% 0, 40% 81%, 19% 81%, 0 81%, 100% 0, 0 78%, 0 52%, 100% 0, 0 50%, 0 35%, 100% 0, 0 33%, 0 19%, 100% 0, 0 17%, 0 7%, 100% 0, 0 5%, 0 0);
         
         clip-path: polygon(0 18%, 100% 0, 100% 100%, 0 87%);
+        -webkit-clip-path: polygon(0 18%, 100% 0, 100% 100%, 0 87%);
         height: 100vh;
 z-index: 1000;
         
@@ -32,7 +34,7 @@ z-index: 1000;
             rgba(5, 255, 88, 0.3),
         rgba(0, 133, 44, 0.3)),
         url(../../img/tyb.jpg);
-        background-position-y: 25%;
+        
     }
 
     @include respond(phone) {

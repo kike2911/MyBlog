@@ -1,0 +1,58 @@
+.blog{
+height: 100vh;
+display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    &__content{
+        display: flex;
+        flex-direction: column;
+        align-content: space-around;
+        align-items: center;
+        height: 80vh;
+        width: 100vh;
+
+        &__heading{
+            text-align: center;
+        }
+    }
+
+    &__article-container{
+        padding: 5rem;
+        margin-bottom: 6rem;
+        background-color: #ffffff6b;
+        border-radius: 1rem;
+
+        &__title{
+            // border: 3px solid white;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            text-align: center;
+            color: white;
+                font-size: 3rem;
+                font-weight: 700;
+                letter-spacing: 3rem;
+            }
+
+            &__content{
+                border: 3px solid white;
+                padding: 1rem;
+                margin-bottom: 1rem;
+                color: white;
+                font-size: 1.4rem;
+            }
+            
+        }
+
+    }
+
+    .article-autor{
+        text-transform: uppercase;
+        text-align: right;
+        float: right;
+        color: white;
+        background-color: #6B6B6B;
+        padding: 0 5px;
+        letter-spacing: 5px;
+    }

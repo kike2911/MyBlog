@@ -272,7 +272,7 @@ body {
   word-wrap: break-word; }
   .heading-primary-music--main {
     display: block;
-    font-size: 10rem;
+    font-size: 8rem;
     letter-spacing: 1rem;
     animation-name: moveInLeft;
     animation-duration: 1s;
@@ -302,6 +302,25 @@ body {
         */ }
     @media only screen and (max-width: 37.5em) {
       .heading-primary-robotics--main {
+        letter-spacing: 1rem;
+        font-family: 5rem; } }
+
+.heading-primary-blog {
+  color: #fff;
+  text-transform: uppercase; }
+  .heading-primary-blog--main {
+    display: block;
+    font-size: 18rem;
+    letter-spacing: 1rem;
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    /*
+        animation-delay: 3s;
+        animation-iteration-count: 3;
+        */ }
+    @media only screen and (max-width: 37.5em) {
+      .heading-primary-blog--main {
         letter-spacing: 1rem;
         font-family: 5rem; } }
 
@@ -492,32 +511,31 @@ span.bold {
             left: -5px;
             top: -8px; }
 
-.composition {
-  position: relative; }
-  .composition__photo {
-    width: 55%;
-    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
-    border-radius: 2px;
-    position: absolute;
-    z-index: 10;
-    transition: all .2s;
-    outline-offset: 2rem; }
-    .composition__photo--p1 {
-      left: 0;
-      top: -2rem; }
-    .composition__photo--p2 {
-      right: 0;
-      top: 2rem; }
-    .composition__photo--p3 {
-      left: 20%;
-      top: 10rem; }
-    .composition__photo:hover {
-      outline: 1.5rem solid #ffffff2c;
-      transform: scale(1.05) translateY(-0.5rem);
-      box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
-      z-index: 20; }
-  .composition:hover .composition__photo:not(:hover) {
-    transform: scale(0.95); }
+.contact__nav-bar {
+  position: absolute;
+  z-index: 1000000;
+  background-color: rgba(5, 5, 5, 0.555);
+  position: fixed;
+  color: white;
+  left: 97%;
+  top: 30%;
+  border-radius: 2px; }
+  .contact__nav-bar__icon {
+    height: 2rem;
+    width: 2rem;
+    fill: white; }
+  .contact__nav-bar__item {
+    padding: 2rem 1rem; }
+  .contact__nav-bar-container {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    justify-content: center;
+    animation: all .3s; }
+    .contact__nav-bar-container :hover {
+      background-color: white; }
+      .contact__nav-bar-container :hover .contact__nav-bar__icon {
+        fill: #fa0404d2; }
 
 .feature-box {
   background-color: rgba(255, 255, 255, 0.8);
@@ -740,8 +758,8 @@ span.bold {
   height: 100vh; }
 
 .main-photo {
-  width: 21rem;
-  height: 21rem;
+  width: 14rem;
+  height: 14rem;
   float: left;
   position: absolute;
   top: 80vh;
@@ -753,8 +771,8 @@ span.bold {
 .information {
   position: absolute;
   float: left;
-  top: 64vh;
-  left: 28rem;
+  top: 50vh;
+  left: 23rem;
   overflow: hidden;
   z-index: 100; }
   .information ul .info {
@@ -797,17 +815,17 @@ span.bold {
   height: 85vh;
   background-image: linear-gradient(to right bottom, rgba(5, 255, 88, 0.3), rgba(0, 133, 44, 0.3)), url(../img/tyb.jpg);
   background-size: cover;
-  background-position: top;
+  background-position: center;
   position: relative; }
   @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
     .tyb {
       clip-path: polygon(0 18%, 100% 0, 100% 100%, 0 87%);
+      -webkit-clip-path: polygon(0 18%, 100% 0, 100% 100%, 0 87%);
       height: 100vh;
       z-index: 1000; } }
   @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
     .tyb {
-      background-image: linear-gradient(to right bottom, rgba(5, 255, 88, 0.3), rgba(0, 133, 44, 0.3)), url(../../img/tyb.jpg);
-      background-position-y: 25%; } }
+      background-image: linear-gradient(to right bottom, rgba(5, 255, 88, 0.3), rgba(0, 133, 44, 0.3)), url(../../img/tyb.jpg); } }
   @media only screen and (max-width: 37.5em) {
     .tyb {
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
@@ -1391,15 +1409,15 @@ span.bold {
   flex-grow: 0; }
 
 .header {
-  height: 85vh;
   background-image: linear-gradient(to right bottom, rgba(250, 4, 4, 0.8), rgba(14, 1, 1, 0.8)), url(../img/hero.jpg);
   background-size: cover;
   background-position: top;
   position: relative; }
   @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
     .header {
+      -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 89%, 68% 85%, 0 78%, 0 0);
       clip-path: polygon(50% 0%, 100% 0, 100% 89%, 68% 85%, 0 78%, 0 0);
-      height: 95vh;
+      height: 100vh;
       z-index: 1000; } }
   @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
     .header {
@@ -1508,7 +1526,7 @@ span.bold {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-image: url(../../img/earth-lights.jpg);
+  background-image: url(../img/earth-lights.jpg);
   background-size: cover;
   background-position: top;
   position: relative; }
@@ -1537,7 +1555,7 @@ span.bold {
 .music {
   height: 100vh;
   display: flex;
-  background-image: linear-gradient(to right bottom, rgba(122, 5, 255, 0.3), rgba(29, 2, 59, 0.3)), url(../../img/blur.jpg);
+  background-image: linear-gradient(to right bottom, rgba(122, 5, 255, 0.3), rgba(29, 2, 59, 0.3)), url(../img/blur.jpg);
   background-size: cover;
   background-position: top;
   position: relative; }
@@ -1571,7 +1589,7 @@ span.bold {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-image: linear-gradient(to right bottom, rgba(122, 120, 124, 0.3), rgba(32, 32, 32, 0.3)), url(../../img/cogs.jpg);
+  background-image: linear-gradient(to right bottom, rgba(122, 120, 124, 0.3), rgba(32, 32, 32, 0.3)), url(../img/cogs.jpg);
   background-size: cover;
   background-position: top; }
   .robotics__content {
@@ -1580,3 +1598,47 @@ span.bold {
     align-items: center; }
   .robotics__heading {
     text-align: center; }
+
+.blog {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .blog__content {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    align-items: center;
+    height: 80vh;
+    width: 100vh; }
+    .blog__content__heading {
+      text-align: center; }
+  .blog__article-container {
+    padding: 5rem;
+    margin-bottom: 6rem;
+    background-color: #ffffff6b;
+    border-radius: 1rem; }
+    .blog__article-container__title {
+      padding: 1rem;
+      margin-bottom: 1rem;
+      text-align: center;
+      color: white;
+      font-size: 3rem;
+      font-weight: 700;
+      letter-spacing: 3rem; }
+    .blog__article-container__content {
+      border: 3px solid white;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      color: white;
+      font-size: 1.4rem; }
+
+.article-autor {
+  text-transform: uppercase;
+  text-align: right;
+  float: right;
+  color: white;
+  background-color: #6B6B6B;
+  padding: 0 5px;
+  letter-spacing: 5px; }

@@ -4,8 +4,8 @@
 }
 
 .main-photo{
-    width: 21rem;
-        height: 21rem;
+    width: 14rem;
+        height: 14rem;
         float: left;
         //transform: translateX(-3rem) skewX(12deg);
         position: absolute;
@@ -20,8 +20,8 @@
 .information{
     position: absolute;
     float: left;
-    top: 64vh;
-    left: 28rem;
+    top: 50vh;
+    left: 23rem;
     overflow: hidden;
     z-index: 100;
     ul{
