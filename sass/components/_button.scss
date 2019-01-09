@@ -94,3 +94,21 @@
         transform: translateY(0);
     }
 }
+
+.btn-cover{
+    text-decoration-style: none;
+    text-transform: uppercase;
+        text-decoration: none;
+        padding: 1.5rem 4rem;
+        color: white;
+        background-color: transparent;
+        border: 2px solid white;
+        font-size: 1.2rem;
+        
+
+        &:hover{
+            background-color: white;
+            color: $color-tertiary-light;
+            transition: all .3s;
+        }
+}
