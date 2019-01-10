@@ -54,6 +54,21 @@
             </li>
         </ul>
     </div>
+
+    <div class="flex-nav-responsive">
+        <input id="toggle" type="checkbox"/>
+<label class="hamburger" for="toggle">
+  <div class="top"></div>
+  <div class="meat"></div>
+  <div class="bottom"></div>
+</label>
+<div id="responsive-nav" class="nav">
+  <div class="nav-wrapper">
+    <nav><a  href="#" onclick="uncheck()">Home</a><a href="#about-me" onclick="uncheck()">About Me</a><a href="#tyb" onclick="uncheck()">T Y B</a><a href="#webd" onclick="uncheck()">Web Design</a><a href="#music" onclick="uncheck()">Music</a><a href="#robotics" onclick="uncheck()">Robotics</a><a href="#blog" onclick="uncheck()">Blog</a></nav>
+  </div>
+</div>
+    </div>
+
     <nav class="flex-nav">
 
             <ul>
@@ -93,7 +108,7 @@
             </div>
         </header>
 
-        <div class="header-footer">
+        <div class="general__header-footer">
 
         <img src="img/kike.jpg" alt="Enrique Cena" class="main-photo">
         <!--En el clip path la altura para la foto es de (0 78%) y de largo es (68% 81%)-->
@@ -290,15 +305,7 @@
                                             cumque
                                             hic et in iste quaerat voluptatum.</p>
 
-                                        <a href="" class="btn__skills__see-more">See More</a>
 
-                                    </div>
-
-                                    <div class="skills-robotics__description__video">
-                                        <video width="150" height="240" autoplay muted loop>
-                                            <source src="img/robotics-video.mp4" type="video/mp4">
-                                            Your browser does not support the video tag.
-                                        </video>
                                     </div>
                                 </div>
 
@@ -350,6 +357,16 @@
                                 <div class="skills-music__header">
                                     <h3 class="skills-music__header__heading">Music</h3>
                                 </div>
+                                <div class="skills-music__description">
+                                    <div class="skills-music__description__paragraph">
+                                        <p>Lorem ipsum dolor sit amet
+                                            consectetur adipisicing elit. Eaque laudantium aspernatur provident
+                                            delectus
+                                            necessitatibus nemo quod? Quibusdam omnis non, quam ipsa fugiat odio,
+                                            cumque
+                                            hic et in iste quaerat voluptatum.</p>
+                                    </div>
+                                </div>
 
 
                                 <div class="skills-music__bar-graph-container">
@@ -394,24 +411,7 @@
                                     </div>
                                 </div>
 
-                                <div class="skills-music__description">
-                                    <div class="skills-music__description__paragraph">
-                                        <p>Lorem ipsum dolor sit amet
-                                            consectetur adipisicing elit. Eaque laudantium aspernatur provident
-                                            delectus
-                                            necessitatibus nemo quod? Quibusdam omnis non, quam ipsa fugiat odio,
-                                            cumque
-                                            hic et in iste quaerat voluptatum.</p>
-                                        <a href="#" class="btn__skills-music__see-more">See More</a>
-                                    </div>
-
-                                    <div class="skills-music__description__video">
-                                        <video width="250" height="240" autoplay muted loop>
-                                            <source src="img/guitar-skills.mp4" type="video/mp4">
-                                            Your browser does not support the video tag.
-                                        </video>
-                                    </div>
-                                </div>
+                                
                             </div>
 
                             <div id="5-skills-content" class="skills-web-design skills-eyelash">
@@ -421,12 +421,6 @@
 
 
                                 <div class="skills-web-design__description">
-                                    <div class="skills-web-design__description__video">
-                                        <video width="150" height="240" autoplay muted loop>
-                                            <source src="img/web-design-video.mp4" type="video/mp4">
-                                            Your browser does not support the video tag.
-                                        </video>
-                                    </div>
                                     <div class="skills-web-design__description__paragraph">
                                         <p>Lorem ipsum dolor sit amet
                                             consectetur adipisicing elit. Eaque laudantium aspernatur provident
@@ -434,7 +428,6 @@
                                             necessitatibus nemo quod? Quibusdam omnis non, quam ipsa fugiat odio,
                                             cumque
                                             hic et in iste quaerat voluptatum.</p>
-                                        <a href="#" class="btn__skills-web-design__see-more">See More</a>
                                     </div>
 
 
@@ -555,15 +548,6 @@
                                             domestic lightbulb
                                             by a mobile app via bluetooth through an Arduino‘s circuit</p>
                                     </div>
-
-                                    <div class="experience-robotics__item">
-                                        <h4 class="experience-robotics__item__heading">2017 / Entrepreneur Project /
-                                            SwitchLight</h4>
-                                        <p class="experience-robotics__item__paragraph">Mechanical device siwtch to
-                                            shut off a
-                                            domestic lightbulb
-                                            by a mobile app via bluetooth through an Arduino‘s circuit</p>
-                                    </div>
                                 </div>
 
                             </div>
@@ -632,15 +616,6 @@
                                         <p class="experience-web-design__item__paragraph">Mechanical device siwtch to
                                             shut off
                                             a
-                                            domestic lightbulb
-                                            by a mobile app via bluetooth through an Arduino‘s circuit</p>
-                                    </div>
-
-                                    <div class="experience-web-design__item">
-                                        <h4 class="experience-web-design__item__heading">2017 / Entrepreneur Project /
-                                            SwitchLight</h4>
-                                        <p class="experience-web-design__item__paragraph">Mechanical device siwtch to
-                                            shut off a
                                             domestic lightbulb
                                             by a mobile app via bluetooth through an Arduino‘s circuit</p>
                                     </div>
@@ -761,7 +736,7 @@
                 <span class="heading-primary-tyb--main">The youth band
                 </span>
 
-                <a href="#" class="btn btn--white btn--animated">Know about us</a>
+                <a href="#" class="btn-cover">Know about us</a>
             </h1>
         </div>
     </div>
@@ -783,7 +758,7 @@
                     quam libero!
                 </p>
             </div>
-            <a href="#" class="btn btn--white btn--animated">Know about us</a>
+            <a href="#" class="btn-cover">Know about us</a>
         </div>
     </div>
 
@@ -851,7 +826,7 @@
 
 
 
-            <a href="#" class="btn btn--white btn--animated">Know about us</a>
+            <a href="#" class="btn-cover">Know about us</a>
         </div>
     </div>
 
@@ -866,7 +841,7 @@
 
             <div class="robo robot3">
             </div>
-            <a href="#" class="btn btn--white btn--animated">Know about us</a>
+            <a href="#" class="btn-cover">Know about us</a>
         </div>
     </div>
 
@@ -913,7 +888,7 @@
                 </div>
             </div>
 
-            <a href="#" class="btn btn--white btn--animated">Know about us</a>
+            <a href="#" class="btn-cover">Know about us</a>
         </div>
     </div>
 

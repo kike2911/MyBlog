@@ -1,7 +1,9 @@
 .about-me-general{
-    weight: 100vh;
     height: 100vh;
-    padding-top: 2%;
+    display: flex;
+    align-items: center;
+    margin: 0 5%;
+    justify-content: center;
 }
 
 .about-me{
@@ -12,8 +14,7 @@
     border-radius: 5px;
     display: flex;
     overflow: hidden;
-    margin: 15rem;
-    height: 70%;
+    height: 80%;
     
     &__header{
         background-color: white;
@@ -30,6 +31,14 @@
             text-align: center;
             font-size: 4rem;
             text-transform: uppercase;
+
+            @media only screen and (max-width: 1280px){
+                padding: 1rem;
+            }
+
+            @media only screen and (max-width: 1118px){
+                font-size: 3rem;
+            }
         }
 
         &__heading-tertiary{
@@ -37,6 +46,15 @@
             padding: 1rem;
             text-transform: uppercase;
             font-weight: 500;
+
+            @media only screen and (max-width: 1280px){
+                padding: 0;
+                margin-left: .5rem;
+            }
+
+            @media only screen and (max-width: 1118px){
+                font-size: 2rem;
+            }
         }
 
         &__heading-fourth{
@@ -44,10 +62,23 @@
             font-size: 2rem;
             padding-bottom: 1rem;
             border-bottom: 1px solid $color-grey-light-1;
+
+            @media only screen and (max-width: 1280px){
+                padding-bottom: .5rem;
+            }
+
+            @media only screen and (max-width: 1118px){
+                font-size: 1.5rem;
+            }
+
         }
 
         & ul{
             padding: 1rem;
+
+            @media only screen and (max-width: 1280px){
+                padding-bottom: .5rem;
+            }
         }
 
         & li{
@@ -105,12 +136,33 @@
         flex-direction: column;
 
         &__container{
-            height: 93%;
+            @media only screen and (max-width: 1400px){
+                height: 92%;
+                }
+
+                @media only screen and (max-width: 1200px){
+                    height: 93%;
+                    }
+
+            height: 92%;
         }
 
         &__nav-bar{
+
+            @media only screen and (max-width: 1400px){
+            height: 8%;
+            }
+
+            @media only screen and (max-width: 1200px){
+                height: 7%;
+                }
+
+            @media only screen and (max-width: 900px){
+                height: 6%;
+            }
+
             display: flex;
-            height: 7%;
+            height: 8%;
             justify-content: space-between;
 
             &__heading-tertiary{
@@ -122,6 +174,14 @@
                 font-weight: 500;
                 border-bottom: 1px solid $color-grey-light-1;
                 transition: all .2s;
+
+                @media only screen and (max-width: 1200px){
+                    font-size: 1.7rem;
+                    }
+
+                    @media only screen and (max-width: 1200px){
+                        font-size: 1.4rem;
+                        }
 
                 &:hover{
                     background-color: $color-grey-light-1;
@@ -320,6 +380,10 @@
                         font-size: 7rem;
                         animation: slide-left 1s ease-in-out;
                     -webkit-animation: slide-left 1s ease-in-out;
+
+                    @media only screen and (max-width: 1280px){
+                        font-size: 6rem;
+                    }
                     }
                 }
 
@@ -334,6 +398,10 @@
                         background-color: $color-secondary-light;
                         margin: 2rem;
                         font-size: 1.4rem;
+
+                        @media only screen and (max-width: 1024px){
+                            margin: 0 2rem;
+                        }
                     }
 
                     &__video{
@@ -446,6 +514,10 @@
                         font-size: 7rem;
                         animation: slide-left 1s ease-in-out;
                     -webkit-animation: slide-left 1s ease-in-out;
+
+                    @media only screen and (max-width: 1280px){
+                        font-size: 6rem;
+                    }
                     }
                 }
 
@@ -461,6 +533,10 @@
                         background-color: $color-secondary-light;
                         margin: 2rem;
                         font-size: 1.4rem;
+
+                        @media only screen and (max-width: 1024px){
+                            margin: 0 2rem;
+                        }
                     }
 
                     &__video{
@@ -572,6 +648,10 @@
                         font-size: 7rem;
                         animation: slide-left 1s ease-in-out;
                     -webkit-animation: slide-left 1s ease-in-out;
+
+                    @media only screen and (max-width: 1280px){
+                        font-size: 6rem;
+                    }
                     }
                 }
 
@@ -587,6 +667,10 @@
                         background-color: $color-secondary-light;
                         margin: 2rem;
                         font-size: 1.4rem;
+
+                        @media only screen and (max-width: 1024px){
+                            margin: 0 2rem;
+                        }
                     }
 
                     &__video{
@@ -750,6 +834,10 @@
                     flex-direction: column;
                     justify-content: space-around;
                     padding: 2rem;
+
+                    @media only screen and (max-width: 1024px){
+                        padding: 1rem
+                    }
                 }
 
                 &__item{
@@ -792,6 +880,10 @@
                     flex-direction: column;
                     justify-content: space-around;
                     padding: 2rem;
+
+                    @media only screen and (max-width: 1024px){
+                        padding: 1rem
+                    }
                 }
 
                 &__item{
@@ -831,6 +923,10 @@
                     flex-direction: column;
                     justify-content: space-around;
                     padding: 2rem;
+
+                    @media only screen and (max-width: 1024px){
+                        padding: 1rem
+                    }
                 }
 
                 &__item{
@@ -863,6 +959,10 @@
         flex-direction: column;
         justify-content: space-between;
 
+        @media only screen and (max-width: 1280px){
+            margin: 1rem;
+        }
+
         &__container{
 
         }
@@ -881,7 +981,11 @@
             }
 
             &__paragraph{
+                font-size: 1.3rem;
 
+                @media only screen and (max-width: 1024px){
+                    font-size: 1rem;
+                }
             }
         }
     }
@@ -894,4 +998,9 @@
      padding: 1rem;
     background-color: white;
     flex-grow: 0;
+}
+
+.video-responsive{
+    width: 100%;
+  height: auto;
 }

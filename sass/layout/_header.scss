@@ -52,10 +52,30 @@
         //transform: translateX(-3rem) skewX(12deg);
         overflow: hidden;
         border-radius: 50%;
-        z-index: 100;
         margin-top: 2rem;
         margin-left: 2rem;
         margin-right: 5rem;
+    transform: translateY(-1rem);
+
+    @media only screen and (max-width: 1400px){
+        transform: translateY(-6rem);
+    }
+
+        @media only screen and (max-width: 1280px){
+            width: 20rem;
+            height: 20rem;
+            transform: translateY(-1rem);
+            margin-right: 3rem;
+        }
+
+        @media only screen and (max-width: 1024px){
+            width: 18rem;
+            height: 18rem;
+
+            transform: translateY(-1rem);
+        }
+        
+            
 }
 
 
@@ -64,6 +84,15 @@
     ul{
         transform: translateY(-40%);
 
+        @media only screen and (max-width: 1400px){
+            transform: translateY(-50%);
+        }
+
+        @media only screen and (max-width: 1280px){
+            transform: translateY(-50%);
+        }
+
+
         .info{
             color: white;
             font-size: 5rem;
@@ -71,6 +100,14 @@
             align-items: center;
 
             letter-spacing: 1rem;
+
+            @media only screen and (max-width: 1280px){
+                font-size: 4rem;
+            }
+
+            @media only screen and (max-width: 1024px){
+                font-size: 3rem;
+            }
 
         }
     }

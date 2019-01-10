@@ -10,8 +10,9 @@ display: flex;
         flex-direction: column;
         align-content: space-around;
         align-items: center;
-        height: 80vh;
-        width: 100vh;
+        height: 90vh;
+        margin-right: 5%;
+        margin-left: 5%;
 
         &__heading{
             text-align: center;
@@ -20,9 +21,19 @@ display: flex;
 
     &__article-container{
         padding: 5rem;
-        margin-bottom: 6rem;
+        margin-bottom: 3rem;
         background-color: #ffffff6b;
         border-radius: 1rem;
+
+        @media only screen and (max-width: 1280px){
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        @media only screen and (max-width: 1024px){
+            padding: 1rem;
+        }
+        
 
         &__title{
             // border: 3px solid white;
@@ -33,6 +44,10 @@ display: flex;
                 font-size: 3rem;
                 font-weight: 700;
                 letter-spacing: 3rem;
+
+                @media only screen and (max-width: 1024px){
+                    margin: 0;
+                }
             }
 
             &__content{
@@ -40,7 +55,11 @@ display: flex;
                 padding: 1rem;
                 margin-bottom: 1rem;
                 color: white;
-                font-size: 1.4rem;
+                font-size: 1.6rem;
+
+                @media only screen and (max-width: 1280px){
+                    font-size: 1.4rem;
+                }
             }
             
         }

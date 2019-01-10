@@ -172,6 +172,12 @@ body {
         animation-delay: 3s;
         animation-iteration-count: 3;
         */ }
+    @media only screen and (max-width: 1235px) {
+      .heading-primary--main {
+        font-size: 9rem; } }
+    @media only screen and (max-width: 1065px) {
+      .heading-primary--main {
+        font-size: 8rem; } }
     @media only screen and (max-width: 37.5em) {
       .heading-primary--main {
         letter-spacing: 1rem;
@@ -183,6 +189,9 @@ body {
     font-weight: 700;
     letter-spacing: 1.75rem;
     animation: moveInRight 1s ease-out; }
+    @media only screen and (max-width: 1065px) {
+      .heading-primary--sub {
+        font-size: 1.8rem; } }
     @media only screen and (max-width: 37.5em) {
       .heading-primary--sub {
         letter-spacing: .5rem; } }
@@ -272,6 +281,9 @@ body {
   backface-visibility: hidden;
   width: 8rem;
   word-wrap: break-word; }
+  @media only screen and (max-width: 1280px) {
+    .heading-primary-music {
+      width: 7rem; } }
   .heading-primary-music--main {
     display: block;
     font-size: 8rem;
@@ -283,6 +295,9 @@ body {
         animation-delay: 3s;
         animation-iteration-count: 3;
         */ }
+    @media only screen and (max-width: 1280px) {
+      .heading-primary-music--main {
+        font-size: 7rem; } }
     @media only screen and (max-width: 37.5em) {
       .heading-primary-music--main {
         letter-spacing: 1rem;
@@ -293,7 +308,7 @@ body {
   text-transform: uppercase; }
   .heading-primary-robotics--main {
     display: block;
-    font-size: 18rem;
+    font-size: 16rem;
     letter-spacing: 1rem;
     animation-name: moveInLeft;
     animation-duration: 1s;
@@ -302,6 +317,9 @@ body {
         animation-delay: 3s;
         animation-iteration-count: 3;
         */ }
+    @media only screen and (max-width: 768px) {
+      .heading-primary-robotics--main {
+        font-size: 10rem; } }
     @media only screen and (max-width: 37.5em) {
       .heading-primary-robotics--main {
         letter-spacing: 1rem;
@@ -312,7 +330,7 @@ body {
   text-transform: uppercase; }
   .heading-primary-blog--main {
     display: block;
-    font-size: 18rem;
+    font-size: 13rem;
     letter-spacing: 1rem;
     animation-name: moveInLeft;
     animation-duration: 1s;
@@ -321,6 +339,9 @@ body {
         animation-delay: 3s;
         animation-iteration-count: 3;
         */ }
+    @media only screen and (max-width: 1280px) {
+      .heading-primary-blog--main {
+        font-size: 10rem; } }
     @media only screen and (max-width: 37.5em) {
       .heading-primary-blog--main {
         letter-spacing: 1rem;
@@ -536,6 +557,13 @@ span.bold {
   left: 97%;
   top: 30%;
   border-radius: 2px; }
+  @media only screen and (max-width: 600px) {
+    .contact__nav-bar {
+      display: none; } }
+  @media only screen and (max-width: 1024px) {
+    .contact__nav-bar {
+      left: 96%;
+      top: 21%; } }
   .contact__nav-bar__icon {
     height: 2rem;
     width: 2rem;
@@ -788,9 +816,11 @@ span.bold {
     justify-content: center; }
 
 .about-me-general {
-  weight: 100vh;
   height: 100vh;
-  padding-top: 2%; }
+  display: flex;
+  align-items: center;
+  margin: 0 5%;
+  justify-content: center; }
 
 .about-me {
   background-color: white;
@@ -799,8 +829,7 @@ span.bold {
   border-radius: 5px;
   display: flex;
   overflow: hidden;
-  margin: 15rem;
-  height: 70%; }
+  height: 80%; }
   .about-me__header {
     background-color: white;
     background-color: rgba(255, 217, 0, 0.623);
@@ -810,18 +839,40 @@ span.bold {
       text-align: center;
       font-size: 4rem;
       text-transform: uppercase; }
+      @media only screen and (max-width: 1280px) {
+        .about-me__header__heading-secondary {
+          padding: 1rem; } }
+      @media only screen and (max-width: 1118px) {
+        .about-me__header__heading-secondary {
+          font-size: 3rem; } }
     .about-me__header__heading-tertiary {
       font-size: 2.5rem;
       padding: 1rem;
       text-transform: uppercase;
       font-weight: 500; }
+      @media only screen and (max-width: 1280px) {
+        .about-me__header__heading-tertiary {
+          padding: 0;
+          margin-left: .5rem; } }
+      @media only screen and (max-width: 1118px) {
+        .about-me__header__heading-tertiary {
+          font-size: 2rem; } }
     .about-me__header__heading-fourth {
       text-align: center;
       font-size: 2rem;
       padding-bottom: 1rem;
       border-bottom: 1px solid grey; }
+      @media only screen and (max-width: 1280px) {
+        .about-me__header__heading-fourth {
+          padding-bottom: .5rem; } }
+      @media only screen and (max-width: 1118px) {
+        .about-me__header__heading-fourth {
+          font-size: 1.5rem; } }
     .about-me__header ul {
       padding: 1rem; }
+      @media only screen and (max-width: 1280px) {
+        .about-me__header ul {
+          padding-bottom: .5rem; } }
     .about-me__header li {
       font-size: 1.5rem; }
     .about-me__header__button-container {
@@ -853,11 +904,26 @@ span.bold {
     display: flex;
     flex-direction: column; }
     .about-me__content__container {
-      height: 93%; }
+      height: 92%; }
+      @media only screen and (max-width: 1400px) {
+        .about-me__content__container {
+          height: 92%; } }
+      @media only screen and (max-width: 1200px) {
+        .about-me__content__container {
+          height: 93%; } }
     .about-me__content__nav-bar {
       display: flex;
-      height: 7%;
+      height: 8%;
       justify-content: space-between; }
+      @media only screen and (max-width: 1400px) {
+        .about-me__content__nav-bar {
+          height: 8%; } }
+      @media only screen and (max-width: 1200px) {
+        .about-me__content__nav-bar {
+          height: 7%; } }
+      @media only screen and (max-width: 900px) {
+        .about-me__content__nav-bar {
+          height: 6%; } }
       .about-me__content__nav-bar__heading-tertiary {
         text-align: center;
         flex: 1;
@@ -867,6 +933,12 @@ span.bold {
         font-weight: 500;
         border-bottom: 1px solid grey;
         transition: all .2s; }
+        @media only screen and (max-width: 1200px) {
+          .about-me__content__nav-bar__heading-tertiary {
+            font-size: 1.7rem; } }
+        @media only screen and (max-width: 1200px) {
+          .about-me__content__nav-bar__heading-tertiary {
+            font-size: 1.4rem; } }
         .about-me__content__nav-bar__heading-tertiary:hover {
           background-color: grey;
           color: white;
@@ -984,6 +1056,9 @@ span.bold {
         font-size: 7rem;
         animation: slide-left 1s ease-in-out;
         -webkit-animation: slide-left 1s ease-in-out; }
+        @media only screen and (max-width: 1280px) {
+          .about-me .skills-robotics__header__heading {
+            font-size: 6rem; } }
       .about-me .skills-robotics__description {
         display: flex; }
         .about-me .skills-robotics__description__paragraph {
@@ -994,6 +1069,9 @@ span.bold {
           background-color: rgba(255, 217, 0, 0.623);
           margin: 2rem;
           font-size: 1.4rem; }
+          @media only screen and (max-width: 1024px) {
+            .about-me .skills-robotics__description__paragraph {
+              margin: 0 2rem; } }
         .about-me .skills-robotics__description__video {
           margin-right: 2rem; }
       .about-me .skills-robotics__bar-graph-container {
@@ -1073,6 +1151,9 @@ span.bold {
         font-size: 7rem;
         animation: slide-left 1s ease-in-out;
         -webkit-animation: slide-left 1s ease-in-out; }
+        @media only screen and (max-width: 1280px) {
+          .about-me .skills-music__header__heading {
+            font-size: 6rem; } }
       .about-me .skills-music__description {
         display: flex; }
         .about-me .skills-music__description__paragraph {
@@ -1083,6 +1164,9 @@ span.bold {
           background-color: rgba(255, 217, 0, 0.623);
           margin: 2rem;
           font-size: 1.4rem; }
+          @media only screen and (max-width: 1024px) {
+            .about-me .skills-music__description__paragraph {
+              margin: 0 2rem; } }
         .about-me .skills-music__description__video {
           margin-right: 2rem; }
       .about-me .skills-music__bar-graph-container {
@@ -1162,6 +1246,9 @@ span.bold {
         font-size: 7rem;
         animation: slide-left 1s ease-in-out;
         -webkit-animation: slide-left 1s ease-in-out; }
+        @media only screen and (max-width: 1280px) {
+          .about-me .skills-web-design__header__heading {
+            font-size: 6rem; } }
       .about-me .skills-web-design__description {
         display: flex; }
         .about-me .skills-web-design__description__paragraph {
@@ -1172,6 +1259,9 @@ span.bold {
           background-color: rgba(255, 217, 0, 0.623);
           margin: 2rem;
           font-size: 1.4rem; }
+          @media only screen and (max-width: 1024px) {
+            .about-me .skills-web-design__description__paragraph {
+              margin: 0 2rem; } }
         .about-me .skills-web-design__description__video {
           margin-right: 2rem; }
       .about-me .skills-web-design__bar-graph-container {
@@ -1277,6 +1367,9 @@ span.bold {
       flex-direction: column;
       justify-content: space-around;
       padding: 2rem; }
+      @media only screen and (max-width: 1024px) {
+        .experience-robotics__content {
+          padding: 1rem; } }
     .experience-robotics__item {
       background-color: rgba(255, 217, 0, 0.623);
       padding: 1rem;
@@ -1302,6 +1395,9 @@ span.bold {
       flex-direction: column;
       justify-content: space-around;
       padding: 2rem; }
+      @media only screen and (max-width: 1024px) {
+        .experience-music__content {
+          padding: 1rem; } }
     .experience-music__item {
       background-color: rgba(255, 217, 0, 0.623);
       padding: 1rem;
@@ -1327,6 +1423,9 @@ span.bold {
       flex-direction: column;
       justify-content: space-around;
       padding: 2rem; }
+      @media only screen and (max-width: 1024px) {
+        .experience-web-design__content {
+          padding: 1rem; } }
     .experience-web-design__item {
       background-color: rgba(255, 217, 0, 0.623);
       padding: 1rem;
@@ -1345,6 +1444,9 @@ span.bold {
     display: flex;
     flex-direction: column;
     justify-content: space-between; }
+    @media only screen and (max-width: 1280px) {
+      .education__content {
+        margin: 1rem; } }
     .education__content__item {
       padding: 2rem;
       border: #333;
@@ -1353,11 +1455,20 @@ span.bold {
       .education__content__item__heading {
         font-size: 2rem;
         transform: translate(1.5rem, 1.5rem); }
+      .education__content__item__paragraph {
+        font-size: 1.3rem; }
+        @media only screen and (max-width: 1024px) {
+          .education__content__item__paragraph {
+            font-size: 1rem; } }
 
 .education__white {
   padding: 1rem;
   background-color: white;
   flex-grow: 0; }
+
+.video-responsive {
+  width: 100%;
+  height: auto; }
 
 .general__header {
   background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.74), rgba(0, 0, 0, 0.719)), url(../img/hero.jpg);
@@ -1389,19 +1500,45 @@ span.bold {
   float: left;
   overflow: hidden;
   border-radius: 50%;
-  z-index: 100;
   margin-top: 2rem;
   margin-left: 2rem;
-  margin-right: 5rem; }
+  margin-right: 5rem;
+  transform: translateY(-1rem); }
+  @media only screen and (max-width: 1400px) {
+    .main-photo {
+      transform: translateY(-6rem); } }
+  @media only screen and (max-width: 1280px) {
+    .main-photo {
+      width: 20rem;
+      height: 20rem;
+      transform: translateY(-1rem);
+      margin-right: 3rem; } }
+  @media only screen and (max-width: 1024px) {
+    .main-photo {
+      width: 18rem;
+      height: 18rem;
+      transform: translateY(-1rem); } }
 
 .information ul {
   transform: translateY(-40%); }
+  @media only screen and (max-width: 1400px) {
+    .information ul {
+      transform: translateY(-50%); } }
+  @media only screen and (max-width: 1280px) {
+    .information ul {
+      transform: translateY(-50%); } }
   .information ul .info {
     color: white;
     font-size: 5rem;
     flex: 1;
     align-items: center;
     letter-spacing: 1rem; }
+    @media only screen and (max-width: 1280px) {
+      .information ul .info {
+        font-size: 4rem; } }
+    @media only screen and (max-width: 1024px) {
+      .information ul .info {
+        font-size: 3rem; } }
 
 .info--4 {
   opacity: 0;
@@ -1430,6 +1567,89 @@ span.bold {
   animation-direction: normal;
   animation-delay: 15s; }
 
+.flex-nav-responsive {
+  display: none; }
+  .flex-nav-responsive .hamburger {
+    position: fixed;
+    width: 50px;
+    height: 45px;
+    top: 10px;
+    right: 20px;
+    z-index: 100; }
+  .flex-nav-responsive .hamburger div {
+    position: fixed;
+    position: relative;
+    width: 50px;
+    height: 5px;
+    border-radius: 3px;
+    background-color: white;
+    margin-top: 7px;
+    transition: all 0.3s ease-in-out; }
+  .flex-nav-responsive #toggle {
+    display: none; }
+  .flex-nav-responsive #toggle:checked + .hamburger .top {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    margin-top: 22.5px; }
+  .flex-nav-responsive #toggle:checked + .hamburger .meat {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    margin-top: -5px; }
+  .flex-nav-responsive #toggle:checked + .hamburger .bottom {
+    -webkit-transform: scale(0);
+    transform: scale(0); }
+  .flex-nav-responsive #toggle:checked + .hamburger + .nav {
+    top: 0; }
+  .flex-nav-responsive nav a:link ~ .hamburger .meat {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    margin-top: -5px; }
+  .flex-nav-responsive .nav {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    top: -100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out; }
+  .flex-nav-responsive .nav .nav-wrapper {
+    position: relative;
+    overflow-y: auto;
+    height: 100%; }
+  .flex-nav-responsive nav {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+  .flex-nav-responsive nav a {
+    margin-top: 1.25em;
+    color: white;
+    opacity: 0;
+    text-decoration: none;
+    font-size: 2.3em;
+    letter-spacing: 3px;
+    transition: all 0.1s ease;
+    text-transform: uppercase; }
+  .flex-nav-responsive nav a:first-child {
+    margin-top: 0; }
+  .flex-nav-responsive #toggle:checked + .hamburger + .nav .nav-wrapper nav a {
+    opacity: 0.9;
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  .flex-nav-responsive #toggle:checked + .hamburger + .nav .nav-wrapper nav a:hover {
+    opacity: 1;
+    color: white;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2); }
+  @media only screen and (max-width: 600px) {
+    .flex-nav-responsive {
+      display: block; } }
+
 .flex-nav {
   overflow: hidden;
   position: fixed;
@@ -1438,6 +1658,9 @@ span.bold {
   z-index: 10000;
   transition: all 0.5s;
   background-color: transparent; }
+  @media only screen and (max-width: 600px) {
+    .flex-nav {
+      display: none; } }
   .flex-nav ul {
     border-radius: 3px;
     display: flex;
@@ -1453,7 +1676,7 @@ span.bold {
       text-decoration: none;
       color: white;
       font-family: sans-serif;
-      font-size: 14px;
+      font-size: 1.3rem;
       list-style: none;
       flex: 1;
       align-self: center;
@@ -1462,10 +1685,19 @@ span.bold {
       letter-spacing: 2px;
       text-decoration: none;
       font-family: sans-serif;
-      padding: 20px;
+      padding: 2rem;
       text-transform: uppercase;
       align-self: center;
       align-items: stretch; }
+      @media only screen and (max-width: 1280px) {
+        .flex-nav ul a {
+          padding: 1.6rem; } }
+      @media only screen and (max-width: 1024px) {
+        .flex-nav ul a {
+          padding: 1.5rem; } }
+      @media only screen and (max-width: 768px) {
+        .flex-nav ul a {
+          font-size: 1rem; } }
       .flex-nav ul a:hover {
         background-color: white;
         transition: all .3s;
@@ -1479,6 +1711,9 @@ span.bold {
   z-index: 100000;
   transition: all 0.5s;
   background-color: black; }
+  @media only screen and (max-width: 600px) {
+    .flex-nav-alt {
+      display: none; } }
   .flex-nav-alt ul {
     border-radius: 3px;
     display: flex;
@@ -1494,7 +1729,7 @@ span.bold {
       text-decoration: none;
       color: white;
       font-family: sans-serif;
-      font-size: 14px;
+      font-size: 1.3rem;
       list-style: none;
       flex: 1;
       align-self: center;
@@ -1503,10 +1738,19 @@ span.bold {
       letter-spacing: 2px;
       text-decoration: none;
       font-family: sans-serif;
-      padding: 20px;
+      padding: 2rem;
       text-transform: uppercase;
       align-self: center;
       align-items: stretch; }
+      @media only screen and (max-width: 1280px) {
+        .flex-nav-alt ul a {
+          padding: 1.6rem; } }
+      @media only screen and (max-width: 1024px) {
+        .flex-nav-alt ul a {
+          padding: 1.5rem; } }
+      @media only screen and (max-width: 768px) {
+        .flex-nav-alt ul a {
+          font-size: 1rem; } }
       .flex-nav-alt ul a:hover {
         background-color: white;
         transition: all .2s;
@@ -1603,15 +1847,23 @@ span.bold {
     flex-direction: column;
     align-content: space-around;
     align-items: center;
-    height: 80vh;
-    width: 100vh; }
+    height: 90vh;
+    margin-right: 5%;
+    margin-left: 5%; }
     .blog__content__heading {
       text-align: center; }
   .blog__article-container {
     padding: 5rem;
-    margin-bottom: 6rem;
+    margin-bottom: 3rem;
     background-color: #ffffff6b;
     border-radius: 1rem; }
+    @media only screen and (max-width: 1280px) {
+      .blog__article-container {
+        padding: 2rem;
+        margin-bottom: 2rem; } }
+    @media only screen and (max-width: 1024px) {
+      .blog__article-container {
+        padding: 1rem; } }
     .blog__article-container__title {
       padding: 1rem;
       margin-bottom: 1rem;
@@ -1620,12 +1872,18 @@ span.bold {
       font-size: 3rem;
       font-weight: 700;
       letter-spacing: 3rem; }
+      @media only screen and (max-width: 1024px) {
+        .blog__article-container__title {
+          margin: 0; } }
     .blog__article-container__content {
       border: 3px solid white;
       padding: 1rem;
       margin-bottom: 1rem;
       color: white;
-      font-size: 1.4rem; }
+      font-size: 1.6rem; }
+      @media only screen and (max-width: 1280px) {
+        .blog__article-container__content {
+          font-size: 1.4rem; } }
 
 .article-autor {
   text-transform: uppercase;

@@ -21,8 +21,18 @@ $(document).ready(function(){
 	
 });
 
+// function changetop(){
+//   document.getElementById("responsive-nav").style.top = "-100%"
+// }
 
+// function changetop1(){
+//   document.getElementById("responsive-nav").style.top = "0"
+//   document.getElementById("toogle").checked = false;
+// }
 
+function uncheck() {
+  document.getElementById("toggle").checked = false;
+}
 
     
 $(document).ready(function(){
