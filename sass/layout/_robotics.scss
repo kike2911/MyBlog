@@ -4,10 +4,15 @@
     flex-direction: column;
     justify-content: center;
 
-    background-image: linear-gradient(
+    background-image: 
+    linear-gradient(
         to right bottom,
-        rgba(122, 120, 124, 0.3),
-        rgba(32, 32, 32, 0.3)),
+        rgba(0, 0, 0, 0.37),
+        rgba(0, 0, 0, 0.295)),
+    // linear-gradient(
+    //     to right bottom,
+    //     rgba(122, 120, 124, 0.3),
+    //     rgba(32, 32, 32, 0.3)),
     url(../img/cogs.jpg);
     background-size: cover;
     background-position: top;

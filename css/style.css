@@ -776,8 +776,16 @@ span.bold {
   justify-content: center;
   height: 100vh; }
   .tyb__text-box {
-    max-width: 50%;
-    text-align: center; }
+    background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.37), rgba(0, 0, 0, 0.295)), url(../img/converse.jpg);
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    height: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: center; }
 
 .about-me-general {
   weight: 100vh;
@@ -994,7 +1002,7 @@ span.bold {
         overflow: hidden;
         margin: 2rem; }
       .about-me .skills-robotics__bar-graph-container p {
-        padding: 1.5rem;
+        padding: 0.5rem;
         color: #fff;
         font-size: 1.8rem; }
       .about-me .skills-robotics-bar-container {
@@ -1083,7 +1091,7 @@ span.bold {
         overflow: hidden;
         margin: 2rem; }
       .about-me .skills-music__bar-graph-container p {
-        padding: 1.5rem;
+        padding: 0.5rem;
         color: #fff;
         font-size: 1.8rem; }
       .about-me .skills-music-bar-container {
@@ -1172,7 +1180,7 @@ span.bold {
         overflow: hidden;
         margin: 2rem; }
       .about-me .skills-web-design__bar-graph-container p {
-        padding: 1.5rem;
+        padding: 0.5rem;
         color: #fff;
         font-size: 1.8rem; }
       .about-me .skills-web-design-bar-container {
@@ -1505,11 +1513,12 @@ span.bold {
         color: #fa0404d2; }
 
 .webd {
+  margin-bottom: 25%;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-image: url(../img/earth-lights.jpg);
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.37), rgba(0, 0, 0, 0.295)), url(../img/earth-lights.jpg);
   background-size: cover;
   background-position: top;
   position: relative; }
@@ -1538,6 +1547,7 @@ span.bold {
 .music {
   height: 100vh;
   display: flex;
+  margin-bottom: 25%;
   background-image: linear-gradient(to right bottom, rgba(122, 5, 255, 0.3), rgba(29, 2, 59, 0.3)), url(../img/blur.jpg);
   background-size: cover;
   background-position: top;
@@ -1572,7 +1582,7 @@ span.bold {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-image: linear-gradient(to right bottom, rgba(122, 120, 124, 0.3), rgba(32, 32, 32, 0.3)), url(../img/cogs.jpg);
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.37), rgba(0, 0, 0, 0.295)), url(../img/cogs.jpg);
   background-size: cover;
   background-position: top; }
   .robotics__content {

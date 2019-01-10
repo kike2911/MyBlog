@@ -1,10 +1,15 @@
 .webd{
+    margin-bottom: 25%;
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
 
     background-image: 
+    linear-gradient(
+        to right bottom,
+        rgba(0, 0, 0, 0.37),
+        rgba(0, 0, 0, 0.295)),
     url(../img/earth-lights.jpg);
     background-size: cover;
     background-position: top;

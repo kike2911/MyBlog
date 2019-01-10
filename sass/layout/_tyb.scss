@@ -6,7 +6,24 @@
     height: 100vh;
 
 &__text-box {
-    max-width: 50%;
+
+    background-image: 
+    linear-gradient(
+        to right bottom,
+        rgba(0, 0, 0, 0.37),
+        rgba(0, 0, 0, 0.295)),
+    url(../img/converse.jpg);
+
+    background-size: cover;
+    background-position: top;
+    position: relative;
+
+    height: 50%;
     text-align: center;
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: center;
+
 }
 }
