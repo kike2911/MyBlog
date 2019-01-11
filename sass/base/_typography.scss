@@ -29,6 +29,10 @@ body {
             font-size: 8rem;
         }
 
+        @media only screen and (max-width: 425px){
+            font-size: 6rem;
+        }  
+
         animation-name: moveInLeft;
         animation-duration: 1s;
         animation-timing-function: ease-out;
@@ -114,6 +118,10 @@ body {
         display: block;
         font-size: 10rem;
         letter-spacing: 1rem;
+
+        @media only screen and (max-width: 425px){
+            font-size: 6rem;
+        }  
     
         animation-name: moveInLeft;
         animation-duration: 1s;
@@ -151,12 +159,21 @@ body {
 
     backface-visibility: hidden;
     margin-bottom: 6rem;
-    
+
+    @media only screen and (max-width: 320px){
+        margin-bottom: 2rem
+    }  
 
     &--main {
         display: block;
         font-size: 10rem;
         letter-spacing: 1rem;
+
+        @media only screen and (max-width: 425px){
+            font-size: 6rem;
+        }  
+
+        
     
         animation-name: moveInLeft;
         animation-duration: 1s;
@@ -186,6 +203,10 @@ body {
     @media only screen and (max-width: 1280px){
         width: 7rem;
     }
+
+    @media only screen and (max-width: 425px){
+        width: 6rem;
+    }  
     
 
     &--main {
@@ -196,6 +217,10 @@ body {
         @media only screen and (max-width: 1280px){
             font-size: 7rem;
         }
+
+        @media only screen and (max-width: 425px){
+            font-size: 6rem;
+        }  
     
         animation-name: moveInLeft;
         animation-duration: 1s;
@@ -230,6 +255,10 @@ body {
         @media only screen and (max-width: 768px){
             font-size: 10rem;
         }
+
+        @media only screen and (max-width: 425px){
+            font-size: 6rem;
+        }  
         
         @include respond(phone) {
             letter-spacing: 1rem;
@@ -255,6 +284,10 @@ body {
         @media only screen and (max-width: 1280px){
             font-size: 10rem;
         }    
+
+        @media only screen and (max-width: 425px){
+            font-size: 6rem;
+        }  
     
         animation-name: moveInLeft;
         animation-duration: 1s;

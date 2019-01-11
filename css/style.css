@@ -178,6 +178,9 @@ body {
     @media only screen and (max-width: 1065px) {
       .heading-primary--main {
         font-size: 8rem; } }
+    @media only screen and (max-width: 425px) {
+      .heading-primary--main {
+        font-size: 6rem; } }
     @media only screen and (max-width: 37.5em) {
       .heading-primary--main {
         letter-spacing: 1rem;
@@ -240,6 +243,9 @@ body {
         animation-delay: 3s;
         animation-iteration-count: 3;
         */ }
+    @media only screen and (max-width: 425px) {
+      .heading-primary-tyb--main {
+        font-size: 6rem; } }
     @media only screen and (max-width: 37.5em) {
       .heading-primary-tyb--main {
         letter-spacing: 1rem;
@@ -259,6 +265,9 @@ body {
   text-transform: uppercase;
   backface-visibility: hidden;
   margin-bottom: 6rem; }
+  @media only screen and (max-width: 320px) {
+    .heading-primary-webd {
+      margin-bottom: 2rem; } }
   .heading-primary-webd--main {
     display: block;
     font-size: 10rem;
@@ -270,6 +279,9 @@ body {
         animation-delay: 3s;
         animation-iteration-count: 3;
         */ }
+    @media only screen and (max-width: 425px) {
+      .heading-primary-webd--main {
+        font-size: 6rem; } }
     @media only screen and (max-width: 37.5em) {
       .heading-primary-webd--main {
         letter-spacing: 1rem;
@@ -284,6 +296,9 @@ body {
   @media only screen and (max-width: 1280px) {
     .heading-primary-music {
       width: 7rem; } }
+  @media only screen and (max-width: 425px) {
+    .heading-primary-music {
+      width: 6rem; } }
   .heading-primary-music--main {
     display: block;
     font-size: 8rem;
@@ -298,6 +313,9 @@ body {
     @media only screen and (max-width: 1280px) {
       .heading-primary-music--main {
         font-size: 7rem; } }
+    @media only screen and (max-width: 425px) {
+      .heading-primary-music--main {
+        font-size: 6rem; } }
     @media only screen and (max-width: 37.5em) {
       .heading-primary-music--main {
         letter-spacing: 1rem;
@@ -320,6 +338,9 @@ body {
     @media only screen and (max-width: 768px) {
       .heading-primary-robotics--main {
         font-size: 10rem; } }
+    @media only screen and (max-width: 425px) {
+      .heading-primary-robotics--main {
+        font-size: 6rem; } }
     @media only screen and (max-width: 37.5em) {
       .heading-primary-robotics--main {
         letter-spacing: 1rem;
@@ -342,6 +363,9 @@ body {
     @media only screen and (max-width: 1280px) {
       .heading-primary-blog--main {
         font-size: 10rem; } }
+    @media only screen and (max-width: 425px) {
+      .heading-primary-blog--main {
+        font-size: 6rem; } }
     @media only screen and (max-width: 37.5em) {
       .heading-primary-blog--main {
         letter-spacing: 1rem;
@@ -444,32 +468,47 @@ span.bold {
   background-color: transparent;
   border: 2px solid white;
   font-size: 1.2rem; }
+  @media only screen and (max-width: 320px) {
+    .btn-cover {
+      padding: 1rem 2rem; } }
   .btn-cover:hover {
     background-color: white;
     color: #fa0404d2;
     transition: all .3s; }
 
 .audio.green-audio-player {
-  width: 400px;
-  min-width: 300px;
-  height: 56px;
+  width: 40rem;
+  min-width: 30rem;
+  height: 5.6rem;
   box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.07);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 24px;
-  padding-right: 24px;
+  padding-left: 2.4rem;
+  padding-right: 2.4rem;
   border-radius: 4px;
   user-select: none;
   -webkit-user-select: none;
   background-color: #fff;
   margin-bottom: 6rem; }
+  @media only screen and (max-width: 900px) {
+    .audio.green-audio-player {
+      width: 0; } }
+  @media only screen and (max-width: 425px) {
+    .audio.green-audio-player {
+      min-width: 25rem; } }
   .audio.green-audio-player .play-pause-btn {
     display: none;
-    cursor: pointer; }
+    cursor: pointer;
+    width: 1.8rem;
+    height: 2.4rem; }
+    @media only screen and (max-width: 425px) {
+      .audio.green-audio-player .play-pause-btn {
+        width: 1.4rem;
+        height: 2rem; } }
   .audio.green-audio-player .spinner {
-    width: 18px;
-    height: 18px;
+    width: 1.8rem;
+    height: 1.8rem;
     background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/355309/loading.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -485,8 +524,8 @@ span.bold {
       position: absolute;
       pointer-events: none; }
       .audio.green-audio-player .slider .progress .pin {
-        height: 16px;
-        width: 16px;
+        height: 1.6rem;
+        width: 1.6rem;
         border-radius: 8px;
         background-color: #44a6bf;
         position: absolute;
@@ -494,59 +533,65 @@ span.bold {
         box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.32); }
   .audio.green-audio-player .controls {
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    line-height: 18px;
+    font-size: 1.6rem;
+    line-height: 1.8rem;
     color: #55606E;
     display: flex;
     flex-grow: 1;
     justify-content: space-between;
     align-items: center;
-    margin-left: 24px;
-    margin-right: 24px; }
+    margin-left: 2.4rem;
+    margin-right: 2.4rem; }
     .audio.green-audio-player .controls .slider {
-      margin-left: 16px;
-      margin-right: 16px;
+      margin-left: 1.6rem;
+      margin-right: 1.6rem;
       border-radius: 2px;
       height: 4px; }
       .audio.green-audio-player .controls .slider .progress {
         width: 0;
         height: 100%; }
         .audio.green-audio-player .controls .slider .progress .pin {
-          right: -8px;
-          top: -6px; }
+          right: -.8rem;
+          top: -.6rem; }
     .audio.green-audio-player .controls span {
       cursor: default; }
   .audio.green-audio-player .volume {
     position: relative; }
     .audio.green-audio-player .volume .volume-btn {
+      height: 2.4rem;
+      width: 2.4rem;
       cursor: pointer; }
+      @media only screen and (max-width: 425px) {
+        .audio.green-audio-player .volume .volume-btn {
+          width: 1.8rem;
+          height: 1.8rem; } }
       .audio.green-audio-player .volume .volume-btn.open path {
         fill: #44a6bf; }
     .audio.green-audio-player .volume .volume-controls {
-      width: 30px;
-      height: 135px;
+      width: 3rem;
+      height: 13.5rem;
       background-color: rgba(0, 0, 0, 0.62);
-      border-radius: 7px;
+      border-radius: .7rem;
       position: absolute;
       left: -3px;
-      bottom: 52px;
+      bottom: 5.2rem;
       flex-direction: column;
       align-items: center;
       display: flex; }
       .audio.green-audio-player .volume .volume-controls.hidden {
         display: none; }
       .audio.green-audio-player .volume .volume-controls .slider {
-        margin-top: 12px;
-        margin-bottom: 12px;
-        width: 6px;
+        margin-top: 1.2rem;
+        margin-bottom: 1.2rem;
+        width: .6rem;
         border-radius: 3px; }
         .audio.green-audio-player .volume .volume-controls .slider .progress {
           bottom: 0;
           height: 100%;
-          width: 6px; }
+          width: .6rem; }
           .audio.green-audio-player .volume .volume-controls .slider .progress .pin {
-            left: -5px;
-            top: -8px; }
+            left: -.5rem;
+            top: -.8rem; }
 
 .contact__nav-bar {
   position: absolute;
@@ -834,6 +879,9 @@ span.bold {
     background-color: white;
     background-color: rgba(255, 217, 0, 0.623);
     width: 30%; }
+    @media only screen and (max-width: 480px) {
+      .about-me__header {
+        display: none; } }
     .about-me__header__heading-secondary {
       padding: 1.5rem;
       text-align: center;
@@ -899,10 +947,17 @@ span.bold {
     height: 1.6em;
     width: 1.6rem;
     fill: grey; }
+    @media only screen and (max-width: 900px) {
+      .about-me .contact__icon {
+        margin-right: 3px;
+        height: 1.2rem; } }
   .about-me__content {
     width: 70%;
     display: flex;
     flex-direction: column; }
+    @media only screen and (max-width: 480px) {
+      .about-me__content {
+        width: 100%; } }
     .about-me__content__container {
       height: 92%; }
       @media only screen and (max-width: 1400px) {
@@ -911,10 +966,17 @@ span.bold {
       @media only screen and (max-width: 1200px) {
         .about-me__content__container {
           height: 93%; } }
+      @media only screen and (max-width: 900px) {
+        .about-me__content__container {
+          height: 94%; } }
+      @media only screen and (max-width: 600px) {
+        .about-me__content__container {
+          height: 83%; } }
     .about-me__content__nav-bar {
       display: flex;
       height: 8%;
-      justify-content: space-between; }
+      justify-content: space-between;
+      z-index: 9; }
       @media only screen and (max-width: 1400px) {
         .about-me__content__nav-bar {
           height: 8%; } }
@@ -924,6 +986,14 @@ span.bold {
       @media only screen and (max-width: 900px) {
         .about-me__content__nav-bar {
           height: 6%; } }
+      @media only screen and (max-width: 600px) {
+        .about-me__content__nav-bar {
+          flex-direction: column;
+          height: 25%; } }
+      @media only screen and (max-width: 600px) {
+        .about-me__content__nav-bar {
+          flex-direction: column;
+          height: 17%; } }
       .about-me__content__nav-bar__heading-tertiary {
         text-align: center;
         flex: 1;
@@ -939,6 +1009,12 @@ span.bold {
         @media only screen and (max-width: 1200px) {
           .about-me__content__nav-bar__heading-tertiary {
             font-size: 1.4rem; } }
+        @media only screen and (max-width: 600px) {
+          .about-me__content__nav-bar__heading-tertiary {
+            padding: 0.2rem; } }
+        @media only screen and (max-width: 375px) {
+          .about-me__content__nav-bar__heading-tertiary {
+            padding: 0; } }
         .about-me__content__nav-bar__heading-tertiary:hover {
           background-color: grey;
           color: white;
@@ -972,15 +1048,33 @@ span.bold {
       height: 1em;
       width: 2.5rem;
       fill: grey; }
+      @media only screen and (max-width: 900px) {
+        .about-me .profile__icon {
+          margin-right: 3px; } }
     .about-me .profile__paragraphs__container {
       width: 70%;
       padding: 2rem; }
+      @media only screen and (max-width: 900px) {
+        .about-me .profile__paragraphs__container {
+          padding: 1rem; } }
+      @media only screen and (max-width: 480px) {
+        .about-me .profile__paragraphs__container {
+          padding: .5rem; } }
       .about-me .profile__paragraphs__container-paragraph {
         font-size: 1.4rem;
         margin-bottom: 1rem; }
+        @media only screen and (max-width: 900px) {
+          .about-me .profile__paragraphs__container-paragraph {
+            font-size: 1rem; } }
     .about-me .profile__values-container {
       padding: 2rem;
       width: 30%; }
+      @media only screen and (max-width: 900px) {
+        .about-me .profile__values-container {
+          padding: 1rem; } }
+      @media only screen and (max-width: 480px) {
+        .about-me .profile__values-container {
+          padding: .5rem; } }
       .about-me .profile__values-container-list {
         list-style: none;
         text-align: right; }
@@ -988,6 +1082,9 @@ span.bold {
         text-transform: uppercase;
         font-size: 1.6rem;
         letter-spacing: 3px; }
+        @media only screen and (max-width: 900px) {
+          .about-me .profile__values-container-item {
+            font-size: 1.2rem; } }
         .about-me .profile__values-container-item .highligther {
           background-color: rgba(255, 217, 0, 0.623); }
         .about-me .profile__values-container-item:not(:first-child) {
@@ -1004,6 +1101,10 @@ span.bold {
       fill: white;
       margin-right: 1rem;
       transform: translateY(3px); }
+      @media only screen and (max-width: 900px) {
+        .about-me .skills .skills-bar__icon {
+          margin-right: 3px;
+          height: 1.6rem; } }
     .about-me .skills__nav-bar {
       display: flex;
       flex-direction: column;
@@ -1023,7 +1124,8 @@ span.bold {
         .about-me .skills__nav-bar__item__icon {
           height: 5rem;
           width: 5rem;
-          fill: white; }
+          fill: white;
+          height: 3rem; }
         .about-me .skills__nav-bar__item:hover {
           background-color: white; }
           .about-me .skills__nav-bar__item:hover .skills__nav-bar__item__icon {
@@ -1059,6 +1161,9 @@ span.bold {
         @media only screen and (max-width: 1280px) {
           .about-me .skills-robotics__header__heading {
             font-size: 6rem; } }
+        @media only screen and (max-width: 480px) {
+          .about-me .skills-robotics__header__heading {
+            font-size: 5rem; } }
       .about-me .skills-robotics__description {
         display: flex; }
         .about-me .skills-robotics__description__paragraph {
@@ -1072,6 +1177,10 @@ span.bold {
           @media only screen and (max-width: 1024px) {
             .about-me .skills-robotics__description__paragraph {
               margin: 0 2rem; } }
+          @media only screen and (max-width: 480px) {
+            .about-me .skills-robotics__description__paragraph {
+              font-size: 1rem;
+              padding: .5rem; } }
         .about-me .skills-robotics__description__video {
           margin-right: 2rem; }
       .about-me .skills-robotics__bar-graph-container {
@@ -1079,10 +1188,16 @@ span.bold {
         border-bottom: 1px solid #333;
         overflow: hidden;
         margin: 2rem; }
+        @media only screen and (max-width: 320px) {
+          .about-me .skills-robotics__bar-graph-container {
+            margin: 1rem; } }
       .about-me .skills-robotics__bar-graph-container p {
         padding: 0.5rem;
         color: #fff;
         font-size: 1.8rem; }
+        @media only screen and (max-width: 900px) {
+          .about-me .skills-robotics__bar-graph-container p {
+            font-size: 1.4rem; } }
       .about-me .skills-robotics-bar-container {
         background-color: rgba(255, 217, 0, 0.623); }
       .about-me .skills-robotics-html {
@@ -1154,6 +1269,9 @@ span.bold {
         @media only screen and (max-width: 1280px) {
           .about-me .skills-music__header__heading {
             font-size: 6rem; } }
+        @media only screen and (max-width: 480px) {
+          .about-me .skills-music__header__heading {
+            font-size: 5rem; } }
       .about-me .skills-music__description {
         display: flex; }
         .about-me .skills-music__description__paragraph {
@@ -1164,6 +1282,10 @@ span.bold {
           background-color: rgba(255, 217, 0, 0.623);
           margin: 2rem;
           font-size: 1.4rem; }
+          @media only screen and (max-width: 480px) {
+            .about-me .skills-music__description__paragraph {
+              font-size: 1rem;
+              padding: .5rem; } }
           @media only screen and (max-width: 1024px) {
             .about-me .skills-music__description__paragraph {
               margin: 0 2rem; } }
@@ -1174,10 +1296,16 @@ span.bold {
         border-bottom: 1px solid #333;
         overflow: hidden;
         margin: 2rem; }
+        @media only screen and (max-width: 320px) {
+          .about-me .skills-music__bar-graph-container {
+            margin: 1rem; } }
       .about-me .skills-music__bar-graph-container p {
         padding: 0.5rem;
         color: #fff;
         font-size: 1.8rem; }
+        @media only screen and (max-width: 900px) {
+          .about-me .skills-music__bar-graph-container p {
+            font-size: 1.4rem; } }
       .about-me .skills-music-bar-container {
         background-color: rgba(255, 217, 0, 0.623); }
       .about-me .skills-music-html {
@@ -1220,6 +1348,9 @@ span.bold {
         animation-delay: 0.1s;
         -webkit-animation-delay: 0.1s;
         margin-top: 1rem; }
+        @media only screen and (max-width: 900px) {
+          .about-me .skills-music-drupal {
+            width: 35%; } }
     .about-me .skills-web-design {
       height: 100%;
       width: 100%;
@@ -1249,6 +1380,9 @@ span.bold {
         @media only screen and (max-width: 1280px) {
           .about-me .skills-web-design__header__heading {
             font-size: 6rem; } }
+        @media only screen and (max-width: 480px) {
+          .about-me .skills-web-design__header__heading {
+            font-size: 5rem; } }
       .about-me .skills-web-design__description {
         display: flex; }
         .about-me .skills-web-design__description__paragraph {
@@ -1259,6 +1393,10 @@ span.bold {
           background-color: rgba(255, 217, 0, 0.623);
           margin: 2rem;
           font-size: 1.4rem; }
+          @media only screen and (max-width: 480px) {
+            .about-me .skills-web-design__description__paragraph {
+              font-size: 1rem;
+              padding: .5rem; } }
           @media only screen and (max-width: 1024px) {
             .about-me .skills-web-design__description__paragraph {
               margin: 0 2rem; } }
@@ -1269,10 +1407,16 @@ span.bold {
         border-bottom: 1px solid #333;
         overflow: hidden;
         margin: 2rem; }
+        @media only screen and (max-width: 320px) {
+          .about-me .skills-web-design__bar-graph-container {
+            margin: 1rem; } }
       .about-me .skills-web-design__bar-graph-container p {
         padding: 0.5rem;
         color: #fff;
         font-size: 1.8rem; }
+        @media only screen and (max-width: 900px) {
+          .about-me .skills-web-design__bar-graph-container p {
+            font-size: 1.4rem; } }
       .about-me .skills-web-design-bar-container {
         background-color: rgba(255, 217, 0, 0.623); }
       .about-me .skills-web-design-html {
@@ -1325,6 +1469,10 @@ span.bold {
     fill: white;
     margin-right: 1rem;
     transform: translateY(3px); }
+    @media only screen and (max-width: 900px) {
+      .experience .skills-bar__icon {
+        margin-right: 3px;
+        height: 1.6rem; } }
   .experience__nav-bar {
     display: flex;
     flex-direction: column;
@@ -1345,6 +1493,9 @@ span.bold {
         height: 5rem;
         width: 5rem;
         fill: white; }
+        @media only screen and (max-width: 900px) {
+          .experience__nav-bar__item__icon {
+            height: 3rem; } }
       .experience__nav-bar__item:hover {
         background-color: white; }
         .experience__nav-bar__item:hover .experience__nav-bar__item__icon {
@@ -1375,6 +1526,12 @@ span.bold {
       padding: 1rem;
       animation: slide-left 1s ease-in-out .3s both;
       -webkit-animation: slide-left 1s ease-in-out .3s both; }
+      @media only screen and (max-width: 900px) {
+        .experience-robotics__item {
+          padding: .5rem; } }
+      @media only screen and (max-width: 320px) {
+        .experience-robotics__item {
+          padding: 0; } }
       .experience-robotics__item__heading {
         font-size: 1.4rem; }
       .experience-robotics__item__paragraph {
@@ -1403,6 +1560,12 @@ span.bold {
       padding: 1rem;
       animation: slide-left 1s ease-in-out .3s both;
       -webkit-animation: slide-left 1s ease-in-out .3s both; }
+      @media only screen and (max-width: 900px) {
+        .experience-music__item {
+          padding: .5rem; } }
+      @media only screen and (max-width: 320px) {
+        .experience-music__item {
+          padding: 0; } }
       .experience-music__item__heading {
         font-size: 1.4rem; }
       .experience-music__item__paragraph {
@@ -1431,6 +1594,12 @@ span.bold {
       padding: 1rem;
       animation: slide-left 1s ease-in-out .3s both;
       -webkit-animation: slide-left 1s ease-in-out .3s both; }
+      @media only screen and (max-width: 900px) {
+        .experience-web-design__item {
+          padding: .5rem; } }
+      @media only screen and (max-width: 320px) {
+        .experience-web-design__item {
+          padding: 0; } }
       .experience-web-design__item__heading {
         font-size: 1.4rem; }
       .experience-web-design__item__paragraph {
@@ -1443,7 +1612,8 @@ span.bold {
     margin: 4rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; }
+    justify-content: space-between;
+    transform: translateY(-2rem); }
     @media only screen and (max-width: 1280px) {
       .education__content {
         margin: 1rem; } }
@@ -1452,6 +1622,9 @@ span.bold {
       border: #333;
       border: 1px solid #777;
       z-index: 10; }
+      @media only screen and (max-width: 900px) {
+        .education__content__item {
+          padding: 1rem; } }
       .education__content__item__heading {
         font-size: 2rem;
         transform: translate(1.5rem, 1.5rem); }
@@ -1465,6 +1638,9 @@ span.bold {
   padding: 1rem;
   background-color: white;
   flex-grow: 0; }
+  @media only screen and (max-width: 900px) {
+    .education__white {
+      padding: 0; } }
 
 .video-responsive {
   width: 100%;
@@ -1492,7 +1668,8 @@ span.bold {
       align-items: center; }
   .general__header-footer {
     display: flex;
-    height: 30%; }
+    height: 30%;
+    align-items: center; }
 
 .main-photo {
   width: 30rem;
@@ -1518,6 +1695,29 @@ span.bold {
       width: 18rem;
       height: 18rem;
       transform: translateY(-1rem); } }
+  @media only screen and (max-width: 550px) {
+    .main-photo {
+      width: 14rem;
+      height: 14rem;
+      transform: translateY(-1rem); } }
+  @media only screen and (max-width: 480px) {
+    .main-photo {
+      width: 19rem;
+      height: 14rem;
+      transform: translateY(-1rem); } }
+  @media only screen and (max-width: 425px) {
+    .main-photo {
+      width: 22rem;
+      height: 14rem;
+      transform: translateY(-1rem); } }
+  @media only screen and (max-width: 375px) {
+    .main-photo {
+      width: 27rem;
+      height: 14rem; } }
+  @media only screen and (max-width: 320px) {
+    .main-photo {
+      width: 27rem;
+      height: 12rem; } }
 
 .information ul {
   transform: translateY(-40%); }
@@ -1527,6 +1727,9 @@ span.bold {
   @media only screen and (max-width: 1280px) {
     .information ul {
       transform: translateY(-50%); } }
+  @media only screen and (max-width: 375px) {
+    .information ul {
+      transform: translateY(-30%); } }
   .information ul .info {
     color: white;
     font-size: 5rem;
@@ -1776,10 +1979,13 @@ span.bold {
     .webd__contain__testimonial {
       padding: 1rem;
       height: auto;
-      width: 50rem;
+      margin: 0 7%;
       margin-bottom: 6rem;
       background-color: rgba(255, 255, 255, 0.397);
       border-radius: 2px; }
+      @media only screen and (max-width: 320px) {
+        .webd__contain__testimonial {
+          margin-bottom: 2rem; } }
       .webd__contain__testimonial__paragraph {
         font-size: 2rem;
         color: white; }
@@ -1787,6 +1993,10 @@ span.bold {
 .border-white {
   padding: 1rem;
   border: 1rem solid white; }
+  @media only screen and (max-width: 600px) {
+    .border-white {
+      border: .5rem solid white;
+      line-height: 2; } }
 
 .music {
   height: 100vh;
@@ -1813,7 +2023,7 @@ span.bold {
     .music__contain__testimonial {
       padding: 1rem;
       height: auto;
-      width: 50rem;
+      margin: 0 7%;
       margin-bottom: 6rem;
       background-color: rgba(255, 255, 255, 0.397);
       border-radius: 2px; }
@@ -1864,6 +2074,9 @@ span.bold {
     @media only screen and (max-width: 1024px) {
       .blog__article-container {
         padding: 1rem; } }
+    @media only screen and (max-width: 375px) {
+      .blog__article-container {
+        margin-bottom: 1rem; } }
     .blog__article-container__title {
       padding: 1rem;
       margin-bottom: 1rem;
@@ -1875,6 +2088,13 @@ span.bold {
       @media only screen and (max-width: 1024px) {
         .blog__article-container__title {
           margin: 0; } }
+      @media only screen and (max-width: 480px) {
+        .blog__article-container__title {
+          letter-spacing: 1rem;
+          font-size: 2rem; } }
+      @media only screen and (max-width: 480px) {
+        .blog__article-container__title {
+          padding: 0; } }
     .blog__article-container__content {
       border: 3px solid white;
       padding: 1rem;
@@ -1884,6 +2104,9 @@ span.bold {
       @media only screen and (max-width: 1280px) {
         .blog__article-container__content {
           font-size: 1.4rem; } }
+      @media only screen and (max-width: 375px) {
+        .blog__article-container__content {
+          font-size: 1rem; } }
 
 .article-autor {
   text-transform: uppercase;

@@ -24,6 +24,10 @@
         // rgb(130, 130, 209));
         background-color: rgba(255, 217, 0, 0.623);
         width: 30%;
+
+        @media only screen and (max-width: 480px){
+            display: none;
+        }
         
 
         &__heading-secondary{
@@ -127,6 +131,11 @@
         height: 1.6em;
             width: 1.6rem;
             fill: $color-grey-light-1;
+
+            @media only screen and (max-width: 900px){
+                margin-right: 3px;
+                height: 1.2rem;
+            }
     }
 
 
@@ -135,6 +144,10 @@
         display: flex;
         flex-direction: column;
 
+        @media only screen and (max-width: 480px){
+            width: 100%;
+        }
+
         &__container{
             @media only screen and (max-width: 1400px){
                 height: 92%;
@@ -142,6 +155,14 @@
 
                 @media only screen and (max-width: 1200px){
                     height: 93%;
+                    }
+
+                    @media only screen and (max-width: 900px){
+                        height: 94%;
+                    }
+
+                    @media only screen and (max-width: 600px){
+                        height: 83%;
                     }
 
             height: 92%;
@@ -164,6 +185,17 @@
             display: flex;
             height: 8%;
             justify-content: space-between;
+            z-index: 9;
+
+            @media only screen and (max-width: 600px){
+                flex-direction: column;
+                height: 25%;
+            }
+
+            @media only screen and (max-width: 600px){
+                flex-direction: column;
+                height: 17%;
+            }
 
             &__heading-tertiary{
                 text-align: center;
@@ -182,6 +214,14 @@
                     @media only screen and (max-width: 1200px){
                         font-size: 1.4rem;
                         }
+
+                        @media only screen and (max-width: 600px){
+                            padding: 0.2rem;
+                            }
+
+                            @media only screen and (max-width: 375px){
+                                padding: 0;
+                                }
 
                 &:hover{
                     background-color: $color-grey-light-1;
@@ -240,21 +280,47 @@
         height: 1em;
             width: 2.5rem;
             fill: $color-grey-light-1;
+
+            @media only screen and (max-width: 900px){
+                margin-right: 3px;
+            }
         }
 
         &__paragraphs__container{
             width: 70%;
             padding: 2rem;
 
+            @media only screen and (max-width: 900px){
+                padding: 1rem;
+            }
+
+            @media only screen and (max-width: 480px){
+                padding: .5rem
+            }
+
             &-paragraph{
                 font-size: 1.4rem;
                 margin-bottom: 1rem;
+
+                @media only screen and (max-width: 900px){
+                    font-size: 1rem;
+                }
+
+                
             }
         }
 
         &__values-container{
             padding: 2rem;
             width: 30%;
+
+            @media only screen and (max-width: 900px){
+                padding: 1rem;
+            }
+
+            @media only screen and (max-width: 480px){
+                padding: .5rem
+            }
 
             &-list{
                 list-style: none;
@@ -265,6 +331,10 @@
                 text-transform: uppercase;
                 font-size: 1.6rem;
                 letter-spacing: 3px;
+
+                @media only screen and (max-width: 900px){
+                    font-size: 1.2rem;
+                }
 
                 .highligther{
                 background-color: rgba(255, 217, 0, 0.623);
@@ -297,6 +367,11 @@
             fill: white;
             margin-right: 1rem;
             transform: translateY(3px);
+
+            @media only screen and (max-width: 900px){
+                margin-right: 3px;
+                height: 1.6rem;
+            }
         }
 
         &__nav-bar{
@@ -327,6 +402,8 @@
                     height: 5rem;
                     width: 5rem;
                     fill: white;
+
+                    height: 3rem;
                     }
 
                     
@@ -381,9 +458,15 @@
                         animation: slide-left 1s ease-in-out;
                     -webkit-animation: slide-left 1s ease-in-out;
 
+                    
                     @media only screen and (max-width: 1280px){
                         font-size: 6rem;
                     }
+
+                    @media only screen and (max-width: 480px){
+                        font-size: 5rem
+                    }
+
                     }
                 }
 
@@ -402,6 +485,13 @@
                         @media only screen and (max-width: 1024px){
                             margin: 0 2rem;
                         }
+
+                        @media only screen and (max-width: 480px){
+                            font-size: 1rem;
+                            padding: .5rem;
+                        }
+
+                        
                     }
 
                     &__video{
@@ -417,12 +507,20 @@
                     border-bottom: 1px solid #333; 
                     overflow: hidden;
                     margin: 2rem;
+
+                    @media only screen and (max-width: 320px){
+                        margin: 1rem;
+                    }
                   }
                   
                   &__bar-graph-container p {
                     padding: 0.5rem;
                     color: #fff;
                     font-size: 1.8rem;
+
+                    @media only screen and (max-width: 900px){
+                        font-size: 1.4rem;
+                    }
                   }
                   
                   &-bar-container {
@@ -515,8 +613,14 @@
                         animation: slide-left 1s ease-in-out;
                     -webkit-animation: slide-left 1s ease-in-out;
 
+                    
+
                     @media only screen and (max-width: 1280px){
                         font-size: 6rem;
+                    }
+
+                    @media only screen and (max-width: 480px){
+                        font-size: 5rem
                     }
                     }
                 }
@@ -533,6 +637,11 @@
                         background-color: $color-secondary-light;
                         margin: 2rem;
                         font-size: 1.4rem;
+
+                        @media only screen and (max-width: 480px){
+                            font-size: 1rem;
+                            padding: .5rem;
+                        }
 
                         @media only screen and (max-width: 1024px){
                             margin: 0 2rem;
@@ -552,12 +661,20 @@
                     border-bottom: 1px solid #333; 
                     overflow: hidden;
                     margin: 2rem;
+
+                    @media only screen and (max-width: 320px){
+                        margin: 1rem;
+                    }
                   }
                   
                   &__bar-graph-container p {
                     padding: 0.5rem;
                     color: #fff;
                     font-size: 1.8rem;
+
+                    @media only screen and (max-width: 900px){
+                        font-size: 1.4rem;
+                    }
                   }
                   
                   &-bar-container {
@@ -612,6 +729,10 @@
                      animation-delay: 0.1s;
                     -webkit-animation-delay: 0.1s;
                     margin-top: 1rem;
+
+                    @media only screen and (max-width: 900px){
+                        width: 35%;
+                    }  
                   } 
             }
 
@@ -649,8 +770,14 @@
                         animation: slide-left 1s ease-in-out;
                     -webkit-animation: slide-left 1s ease-in-out;
 
+                    
+
                     @media only screen and (max-width: 1280px){
                         font-size: 6rem;
+                    }
+
+                    @media only screen and (max-width: 480px){
+                        font-size: 5rem
                     }
                     }
                 }
@@ -667,6 +794,11 @@
                         background-color: $color-secondary-light;
                         margin: 2rem;
                         font-size: 1.4rem;
+
+                        @media only screen and (max-width: 480px){
+                            font-size: 1rem;
+                            padding: .5rem;
+                        }
 
                         @media only screen and (max-width: 1024px){
                             margin: 0 2rem;
@@ -686,12 +818,20 @@
                     border-bottom: 1px solid #333; 
                     overflow: hidden;
                     margin: 2rem;
+
+                    @media only screen and (max-width: 320px){
+                        margin: 1rem;
+                    }
                   }
                   
                   &__bar-graph-container p {
                     padding: 0.5rem;
                     color: #fff;
                     font-size: 1.8rem;
+
+                    @media only screen and (max-width: 900px){
+                        font-size: 1.4rem;
+                    }
                   }
                   
                   &-bar-container {
@@ -765,6 +905,11 @@
             fill: white;
             margin-right: 1rem;
             transform: translateY(3px);
+
+            @media only screen and (max-width: 900px){
+                margin-right: 3px;
+                height: 1.6rem;
+            }
         }
 
         &__nav-bar{
@@ -795,6 +940,10 @@
                     height: 5rem;
                     width: 5rem;
                     fill: white;
+
+                    @media only screen and (max-width: 900px){
+                        height: 3rem;
+                    }  
                     }
 
                     
@@ -846,6 +995,14 @@
                     animation: slide-left 1s ease-in-out .3s both;
                     -webkit-animation: slide-left 1s ease-in-out .3s both;
 
+                    @media only screen and (max-width: 900px){
+                        padding: .5rem;
+                    }  
+
+                    @media only screen and (max-width: 320px){
+                        padding: 0;
+                    }  
+
                     &__heading{
                         font-size: 1.4rem;
                     }
@@ -892,6 +1049,14 @@
                     animation: slide-left 1s ease-in-out .3s both;
                     -webkit-animation: slide-left 1s ease-in-out .3s both;
 
+                    @media only screen and (max-width: 900px){
+                        padding: .5rem;
+                    }  
+
+                    @media only screen and (max-width: 320px){
+                        padding: 0;
+                    }  
+
                     &__heading{
                         font-size: 1.4rem;
                     }
@@ -935,6 +1100,14 @@
                     animation: slide-left 1s ease-in-out .3s both;
                     -webkit-animation: slide-left 1s ease-in-out .3s both;
 
+                    @media only screen and (max-width: 900px){
+                        padding: .5rem;
+                    }  
+
+                    @media only screen and (max-width: 320px){
+                        padding: 0;
+                    }  
+
                     &__heading{
                         font-size: 1.4rem;
                     }
@@ -958,6 +1131,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        transform: translateY(-2rem);
 
         @media only screen and (max-width: 1280px){
             margin: 1rem;
@@ -972,6 +1146,10 @@
             border: $color-grey-dark-3;
             border: 1px solid $color-grey-dark;
             z-index: 10;
+
+            @media only screen and (max-width: 900px){
+                padding: 1rem;
+            }  
 
             &__heading{
                 font-size: 2rem;
@@ -998,6 +1176,10 @@
      padding: 1rem;
     background-color: white;
     flex-grow: 0;
+
+    @media only screen and (max-width: 900px){
+        padding: 0;
+    }  
 }
 
 .video-responsive{
